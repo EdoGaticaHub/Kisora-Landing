@@ -1,0 +1,19 @@
+# Ejemplo: copiar a /etc/caddy/Caddyfile y ajustar la ruta.
+kisora.cl, www.kisora.cl {
+	@www host www.kisora.cl
+	redir @www https://kisora.cl{uri} permanent
+
+	root * /var/www/kisora-landing
+	encode zstd gzip
+	file_server
+
+	header {
+		Strict-Transport-Security "max-age=31536000"
+		X-Content-Type-Options nosniff
+		X-Frame-Options DENY
+		Referrer-Policy strict-origin-when-cross-origin
+		Content-Security-Policy "default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self' 'unsafe-inline'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"
+	}
+	@estatico path /css/* /js/* /img/*
+	header @estatico Cache-Control "public, max-age=86400"
+}
