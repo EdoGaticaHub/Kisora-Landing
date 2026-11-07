@@ -1,11 +1,16 @@
 #!/usr/bin/env bash
-# Sube el sitio al servidor por rsync. Uso: ./desplegar.sh usuario@servidor [/ruta/remota]
+# Arma kisora-web.zip con solo lo que se publica.
 set -euo pipefail
-destino="${1:?Uso: ./desplegar.sh usuario@servidor [/ruta/remota]}"
-ruta="${2:-/var/www/kisora-landing}"
 cd "$(dirname "$0")"
-rsync -avz --delete \
-  --exclude '.git' --exclude '.gitignore' --exclude 'README.md' \
-  --exclude 'Caddyfile.ejemplo' --exclude 'desplegar.sh' \
-  ./ "$destino:$ruta/"
-echo "Listo: https://kisora.cl"
+rm -f kisora-web.zip
+python3 - <<'PY'
+import zipfile, pathlib
+inc = ["index.html", "robots.txt", "sitemap.xml", "favicon.ico", "css", "js", "img", "legal"]
+with zipfile.ZipFile("kisora-web.zip", "w", zipfile.ZIP_DEFLATED) as z:
+    for i in inc:
+        p = pathlib.Path(i)
+        for f in ([p] if p.is_file() else sorted(p.rglob("*"))):
+            if f.is_file():
+                z.write(f, f.as_posix())
+print("kisora-web.zip listo")
+PY

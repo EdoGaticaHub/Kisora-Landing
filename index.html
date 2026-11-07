@@ -1,191 +1,220 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es-CL">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Kisora | Control de tu obra en un solo lugar</title>
-<meta name="description" content="Kisora reúne compras y bodega, proyectos, logística, pagos y personal de tu constructora en un solo sistema. Prueba gratis 14 días.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kisora — Control de obras para constructoras | Chile</title>
+<meta name="description" content="Software de gestión de obras para constructoras chilenas. Compras, bodega, materiales, logística y avance en un solo lugar. Prueba gratis 14 días.">
 <link rel="canonical" href="https://kisora.cl/">
 <meta name="theme-color" content="#1B3A5C">
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="apple-touch-icon" href="/img/icon-512.png">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_CL">
 <meta property="og:site_name" content="Kisora">
+<meta property="og:title" content="Kisora — Control de obras para constructoras">
+<meta property="og:description" content="Compras, bodega, materiales, logística y avance en un solo lugar. Prueba gratis 14 días.">
 <meta property="og:url" content="https://kisora.cl/">
-<meta property="og:title" content="Kisora | Control de tu obra en un solo lugar">
-<meta property="og:description" content="Compras y bodega, proyectos, logística, pagos y personal de tu constructora en un solo sistema.">
 <meta property="og:image" content="https://kisora.cl/img/og.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Kisora | Control de tu obra en un solo lugar">
-<meta name="twitter:description" content="Compras y bodega, proyectos, logística, pagos y personal de tu constructora en un solo sistema.">
-<meta name="twitter:image" content="https://kisora.cl/img/og.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/img/icon-512.png">
 <link rel="stylesheet" href="/css/estilos.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
 {"@type":"Organization","name":"Kisora","url":"https://kisora.cl/","logo":"https://kisora.cl/img/icon-512.png","email":"contacto@kisora.cl","areaServed":"CL"},
-{"@type":"SoftwareApplication","name":"Kisora","applicationCategory":"BusinessApplication","operatingSystem":"Web","inLanguage":"es-CL","url":"https://kisora.cl/","description":"Sistema de gestión de obras para constructoras chilenas: compras y bodega, proyectos, logística, pagos y personal."}
+{"@type":"SoftwareApplication","name":"Kisora","applicationCategory":"BusinessApplication","operatingSystem":"Web","inLanguage":"es-CL","url":"https://kisora.cl/","description":"Gestión de obras para constructoras: compras, bodega, proyectos, logística, pagos y personal."}
 ]}
 </script>
-<script>try{var t=localStorage.getItem("tema");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 </head>
 <body>
-<a class="salto" href="#contenido">Saltar al contenido</a>
-<header class="nav" id="nav">
-  <div class="w">
-    <a class="marca" href="/"><img src="/img/logo.png" width="36" height="36" alt="">Kisora</a>
-    <button class="ham" id="ham" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">&#9776;</button>
-    <nav class="menu" id="menu" aria-label="Principal">
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+
+<header class="navbar" id="navbar">
+  <div class="contenedor nav-interior">
+    <a class="marca" href="/" aria-label="Kisora, inicio">
+      <img src="/img/logo.png" width="32" height="32" alt=""><span>Kisora</span>
+    </a>
+    <nav class="nav-links" id="nav-links" aria-label="Principal">
       <a href="#funciones">Funciones</a>
       <a href="#precios">Precios</a>
-      <a href="#preguntas">Preguntas</a>
+      <a href="#faq">Preguntas</a>
       <a href="#contacto">Contacto</a>
-      <button type="button" id="tema" aria-label="Cambiar tema claro u oscuro">Tema</button>
-      <a class="btn" href="https://app.kisora.cl/">Acceder</a>
     </nav>
+    <div class="nav-acciones">
+      <button type="button" class="btn-tema" id="btn-tema" aria-label="Cambiar entre tema claro y oscuro">Tema</button>
+      <a class="btn-acceder" href="https://app.kisora.cl/">Acceder</a>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+    </div>
   </div>
 </header>
+
 <main id="contenido">
 
-<section class="hero">
-  <div class="w">
-    <div>
+<section class="seccion hero" id="hero">
+  <div class="contenedor hero-grid">
+    <div class="hero-texto">
       <h1>Control de tu obra en un solo lugar</h1>
-      <p class="sub">Compras, bodega, proyectos, despachos, pagos y cuadrillas en un solo sistema, pensado para constructoras chilenas.</p>
-      <div class="acc">
-        <a class="btn" href="mailto:contacto@kisora.cl?subject=Quiero%20probar%20Kisora%20gratis%20por%2014%20d%C3%ADas">Probar gratis 14 días</a>
-        <a href="#funciones">Ver cómo funciona</a>
+      <p class="subtitulo">Compras, bodega, materiales, logística y avance, para constructoras que necesitan orden sin complicarse.</p>
+      <div class="hero-botones">
+        <a class="btn-primario" href="mailto:contacto@kisora.cl?subject=Quiero%20probar%20Kisora%2014%20d%C3%ADas">Probar gratis 14 días</a>
+        <a class="enlace-sec" href="#funciones">Ver cómo funciona ↓</a>
       </div>
-      <p class="micro">Escríbenos y partimos.</p>
+      <p class="microcopy">Sin tarjeta de crédito · Te respondemos en horario laboral</p>
     </div>
-    <div class="marco">
-      <div class="bar" aria-hidden="true"><i></i><i></i><i></i></div>
-      <img src="/img/jornada.webp" width="1100" height="618" alt="Pantalla Mi jornada de Kisora con alertas de facturas, materiales y destinos pendientes">
+    <div class="hero-captura">
+      <div class="marco">
+        <div class="marco-barra" aria-hidden="true"><i></i><i></i><i></i></div>
+        <img src="/img/hero-captura.webp" width="1100" height="618" alt="Pantalla Mi jornada de Kisora con avisos de facturas vencidas, órdenes por recibir y materiales bajo el mínimo">
+      </div>
     </div>
   </div>
 </section>
 
-<div class="conf">
-  <div class="w">
-    <strong>Hecho en Chile para constructoras chilenas</strong>
-    <ul>
-      <li>Una instalación por empresa</li>
-      <li>Respaldo nocturno</li>
-      <li>Desde el celular</li>
-      <li>Soporte por correo</li>
+<section class="confianza" id="confianza" aria-label="Por qué Kisora">
+  <div class="contenedor">
+    <p class="confianza-titulo">Hecho en Chile para constructoras chilenas</p>
+    <ul class="indicadores">
+      <li><strong>Una instalación por empresa</strong><span>Tu base de datos aparte</span></li>
+      <li><strong>Respaldo nocturno</strong><span>Automático, cada noche</span></li>
+      <li><strong>Desde el celular</strong><span>En el navegador, sin instalar</span></li>
+      <li><strong>Soporte directo</strong><span>Por correo, en horario laboral</span></li>
     </ul>
   </div>
-</div>
+</section>
 
-<section id="problemas">
-  <div class="w">
-    <div class="tit"><h2>Lo que se pierde cuando la obra va en planillas y WhatsApp</h2></div>
-    <div class="grid">
-      <div class="card"><h3>Órdenes de compra perdidas</h3><p>Nadie sabe cuál OC se pidió, cuál llegó y cuál quedó a medias.</p></div>
-      <div class="card"><h3>Stock que no cuadra</h3><p>La bodega dice una cosa, la obra otra, y el cemento se acaba un lunes.</p></div>
-      <div class="card"><h3>Despachos sin seguimiento</h3><p>Camiones, retiros en proveedor y paradas del día sin un lugar donde verlos.</p></div>
-      <div class="card"><h3>Costos por obra a ciegas</h3><p>Las facturas llegan, pero no se sabe cuánto se lleva gastado en cada proyecto.</p></div>
-      <div class="card"><h3>Avance de cuadrillas</h3><p>Quién trabaja dónde y cuánto se avanzó termina en la memoria del jefe de obra.</p></div>
-      <div class="card"><h3>Datos que no son tuyos</h3><p>La información queda en el computador de alguien. Con Kisora vive en tu propia instalación.</p></div>
+<section class="seccion" id="problemas">
+  <div class="contenedor">
+    <h2>Los problemas que ya conoces</h2>
+    <div class="grid-problemas">
+      <article class="tarjeta"><h3>Las OC se pierden en WhatsApp y Excel</h3><p>Órdenes de compra con historial, proveedor y seguimiento de la entrega.</p></article>
+      <article class="tarjeta"><h3>No sé cuánto material queda en bodega</h3><p>Entradas, retiros y alertas cuando un material baja del mínimo.</p></article>
+      <article class="tarjeta"><h3>Los despachos se descoordinan</h3><p>Viajes con chofer y vehículo, y confirmación de cada parada.</p></article>
+      <article class="tarjeta"><h3>No sé cuánto llevo gastado por obra</h3><p>Compras y facturas ligadas a cada obra y a cada destino.</p></article>
+      <article class="tarjeta"><h3>Las cuadrillas no reportan avance</h3><p>Asignaciones por cuadrilla y una Carta Gantt con el estado de cada obra.</p></article>
+      <article class="tarjeta"><h3>Mis datos están en la nube de otro</h3><p>Cada empresa tiene su propia instalación y su propio respaldo.</p></article>
     </div>
   </div>
 </section>
 
-<section id="funciones" class="alt">
-  <div class="w">
-    <div class="tit"><h2>Un sistema, cinco áreas de la obra</h2><p>Cada área hace una cosa y la hace sin vueltas.</p></div>
-    <div role="tablist" aria-label="Funciones de Kisora">
-      <button role="tab" id="t1" aria-controls="p1" aria-selected="true">Compras y bodega</button>
-      <button role="tab" id="t2" aria-controls="p2" aria-selected="false" tabindex="-1">Proyectos</button>
-      <button role="tab" id="t3" aria-controls="p3" aria-selected="false" tabindex="-1">Logística</button>
-      <button role="tab" id="t4" aria-controls="p4" aria-selected="false" tabindex="-1">Pagos</button>
-      <button role="tab" id="t5" aria-controls="p5" aria-selected="false" tabindex="-1">Personal</button>
+<section class="seccion alt" id="funciones">
+  <div class="contenedor">
+    <h2>Conoce Kisora por dentro</h2>
+    <div class="tabs" role="tablist" aria-label="Módulos de Kisora">
+      <button role="tab" id="t-compras" aria-controls="p-compras" aria-selected="true">Compras y bodega</button>
+      <button role="tab" id="t-proyectos" aria-controls="p-proyectos" aria-selected="false" tabindex="-1">Proyectos</button>
+      <button role="tab" id="t-logistica" aria-controls="p-logistica" aria-selected="false" tabindex="-1">Logística</button>
+      <button role="tab" id="t-pagos" aria-controls="p-pagos" aria-selected="false" tabindex="-1">Pagos</button>
+      <button role="tab" id="t-personal" aria-controls="p-personal" aria-selected="false" tabindex="-1">Personal</button>
     </div>
-    <div role="tabpanel" id="p1" aria-labelledby="t1">
-      <div><h3>Compras y bodega</h3><p>Órdenes de compra y existencias de bodega en el mismo lugar.</p>
-        <ul><li>Crea y sigue cada orden de compra, con su proveedor y destino.</li><li>Ve las existencias y los materiales bajo el mínimo.</li><li>Deshaz un movimiento de bodega por contramovimiento, sin borrar historial.</li></ul></div>
-      <div class="marco"><img src="/img/compras-bodega.webp" width="1100" height="618" loading="lazy" alt="Pantalla Compras y bodega de Kisora con existencias de materiales"></div>
+
+    <div class="panel" role="tabpanel" id="p-compras" aria-labelledby="t-compras">
+      <div><h3>Compras y bodega</h3>
+        <p>Crea órdenes de compra, sabe qué viene en camino y cuánto hay en bodega.</p>
+        <ul><li>Órdenes de compra por proveedor y destino</li><li>Recepción y stock de materiales</li><li>Aviso de materiales bajo el mínimo</li></ul></div>
+      <div class="marco"><div class="marco-barra" aria-hidden="true"><i></i><i></i><i></i></div>
+        <img src="/img/compras.webp" width="1100" height="266" loading="lazy" alt="Lista de órdenes de compra en Compras y bodega"></div>
     </div>
-    <div role="tabpanel" id="p2" aria-labelledby="t2" hidden>
-      <div><h3>Proyectos</h3><p>Tus obras en ejecución, con sus nombres: proyecto, unidad y etapa se configuran.</p>
-        <ul><li>Lista de obras en ejecución, terminadas y por destinar.</li><li>Carta Gantt del avance.</li><li>Sube presupuestos y planos a cada proyecto.</li></ul></div>
-      <div class="marco"><img src="/img/proyectos.webp" width="1100" height="618" loading="lazy" alt="Pantalla Proyectos de Kisora con obras en ejecución"></div>
+    <div class="panel" role="tabpanel" id="p-proyectos" aria-labelledby="t-proyectos" hidden>
+      <div><h3>Proyectos</h3>
+        <p>Cada obra con sus unidades, su presupuesto y su avance.</p>
+        <ul><li>Obras en ejecución, por comenzar y terminadas</li><li>Carta Gantt con el estado de cada obra</li><li>Presupuestos y planos subidos a cada proyecto</li></ul></div>
+      <div class="marco"><div class="marco-barra" aria-hidden="true"><i></i><i></i><i></i></div>
+        <img src="/img/proyectos.webp" width="1100" height="266" loading="lazy" alt="Pantalla Proyectos con las obras en ejecución"></div>
     </div>
-    <div role="tabpanel" id="p3" aria-labelledby="t3" hidden>
-      <div><h3>Logística</h3><p>Lo que se mueve hoy: viajes, paradas y retiros en proveedor.</p>
-        <ul><li>Programa viajes con vehículo y chofer.</li><li>Ve las paradas pendientes del día.</li><li>Controla lo que falta por retirar del proveedor.</li></ul></div>
-      <div class="marco"><img src="/img/logistica.webp" width="1100" height="618" loading="lazy" alt="Pantalla Logística de Kisora con viajes y paradas de hoy"></div>
+    <div class="panel" role="tabpanel" id="p-logistica" aria-labelledby="t-logistica" hidden>
+      <div><h3>Logística</h3>
+        <p>Programa viajes, asigna chofer y vehículo, y confirma cada parada.</p>
+        <ul><li>Viajes y paradas del día</li><li>Materiales por retirar del proveedor</li><li>Vehículos disponibles y en mantención</li></ul></div>
+      <div class="marco"><div class="marco-barra" aria-hidden="true"><i></i><i></i><i></i></div>
+        <img src="/img/logistica.webp" width="1100" height="618" loading="lazy" alt="Pantalla Logística con los viajes y paradas de hoy"></div>
     </div>
-    <div role="tabpanel" id="p4" aria-labelledby="t4" hidden>
-      <div><h3>Pagos</h3><p>Cuentas por pagar al día, sin perseguir facturas.</p>
-        <ul><li>Total por pagar y facturas vencidas a la vista.</li><li>Deuda por tramo de antigüedad.</li><li>Registra o sube facturas y márcalas pagadas.</li></ul></div>
-      <div class="marco"><img src="/img/pagos.webp" width="1100" height="451" loading="lazy" alt="Pantalla Pagos de Kisora con deuda por tramos de antigüedad"></div>
+    <div class="panel" role="tabpanel" id="p-pagos" aria-labelledby="t-pagos" hidden>
+      <div><h3>Pagos</h3>
+        <p>Facturas por pagar y pagadas, con su antigüedad a la vista.</p>
+        <ul><li>Total por pagar y facturas vencidas</li><li>Facturas por proveedor</li><li>Registro de cada pago</li></ul></div>
+      <div class="marco"><div class="marco-barra" aria-hidden="true"><i></i><i></i><i></i></div>
+        <img src="/img/pagos.webp" width="1100" height="242" loading="lazy" alt="Pantalla Pagos con el total por pagar y las facturas vencidas"></div>
     </div>
-    <div role="tabpanel" id="p5" aria-labelledby="t5" hidden>
-      <div><h3>Personal</h3><p>Trabajadores, cuadrillas y asignaciones a obra.</p>
-        <ul><li>Nómina de trabajadores con su rol.</li><li>Cuadrillas con jefe e integrantes.</li><li>Asignaciones de cada cuadrilla a la obra.</li></ul></div>
-      <div class="sinfoto">Captura de esta área pendiente.</div>
+    <div class="panel" role="tabpanel" id="p-personal" aria-labelledby="t-personal" hidden>
+      <div><h3>Personal</h3>
+        <p>Trabajadores, cuadrillas y asignaciones en un solo listado.</p>
+        <ul><li>Fichas de trabajadores y cuadrillas</li><li>Jefes de cuadrilla y maestros</li><li>Cada persona ve su propia jornada</li></ul></div>
+      <div class="marco"><div class="marco-barra" aria-hidden="true"><i></i><i></i><i></i></div>
+        <img src="/img/personal.webp" width="1100" height="618" loading="lazy" alt="Pantalla Personal con el listado de trabajadores"></div>
     </div>
     <p class="nota">Capturas de una instalación de demostración con datos inventados.</p>
   </div>
 </section>
 
-<section id="prueba">
-  <div class="w">
-    <div class="tit"><h2>Prueba Kisora 14 días</h2><p>Para ver si te sirve, antes de decidir.</p></div>
+<section class="seccion" id="prueba">
+  <div class="contenedor prueba">
+    <div>
+      <h2>Pruébalo 14 días</h2>
+      <p>Escríbenos y te dejamos una instalación lista para que tu equipo la use con sus propias obras. Sin tarjeta de crédito, sin compromiso.</p>
+      <a class="btn-primario" href="mailto:contacto@kisora.cl?subject=Quiero%20probar%20Kisora%2014%20d%C3%ADas">Pedir mi prueba</a>
+    </div>
     <ol class="pasos">
-      <li><h3>Escríbenos</h3><p>Un correo con el nombre de tu constructora.</p></li>
-      <li><h3>Recibe tu acceso</h3><p>Te entregamos usuario y contraseña para entrar.</p></li>
-      <li><h3>Úsalo en tu obra</h3><p>Tienes 14 días para probarlo. Después, tú decides.</p></li>
+      <li>Nos escribes con el nombre de tu empresa.</li>
+      <li>Te enviamos la dirección de tu instalación y tu acceso.</li>
+      <li>Cargas tus obras y trabajas 14 días.</li>
     </ol>
-    <a class="btn" href="mailto:contacto@kisora.cl?subject=Quiero%20probar%20Kisora%20gratis%20por%2014%20d%C3%ADas">Probar gratis por correo</a>
   </div>
 </section>
 
-<section id="precios" class="alt">
-  <div class="w">
-    <div class="card precio">
-      <h2>Kisora para tu constructora</h2>
-      <p class="monto">Cotiza en 24 h</p>
-      <ul><li>Suscripción anual por instalación.</li><li>Precio en UF netas.</li><li>Compras y bodega, proyectos, logística, pagos y personal.</li></ul>
-      <a class="btn" href="mailto:contacto@kisora.cl?subject=Quiero%20pedir%20una%20cotizaci%C3%B3n%20de%20Kisora">Pedir cotización</a>
+<section class="seccion alt" id="precios">
+  <div class="contenedor">
+    <h2>Un precio por instalación</h2>
+    <p class="sub">Suscripción anual en UF netas. Incluye actualizaciones y soporte.</p>
+    <div class="plan">
+      <h3>Kisora para tu constructora</h3>
+      <p class="precio">Cotiza en 24 h</p>
+      <ul class="check">
+        <li>Compras y bodega, Proyectos, Logística, Pagos y Personal</li>
+        <li>Módulos por tipo de trabajo: vivienda social, mejoramiento y obra pública</li>
+        <li>Tu propia instalación y base de datos</li>
+        <li>Respaldo nocturno automático</li>
+        <li>Actualizaciones incluidas</li>
+        <li>Soporte por correo</li>
+      </ul>
+      <a class="btn-primario" href="mailto:contacto@kisora.cl?subject=Cotizaci%C3%B3n%20Kisora">Pedir cotización</a>
     </div>
   </div>
 </section>
 
-<section id="preguntas">
-  <div class="w">
-    <div class="tit"><h2>Preguntas frecuentes</h2></div>
-    <details><summary>¿Qué necesito para usar Kisora?</summary><p>Un navegador web actual. Kisora funciona desde el computador y desde el celular. Los requisitos de la instalación te los indicamos al cotizar.</p></details>
-    <details><summary>¿Qué tan seguros están mis datos?</summary><p>Cada empresa tiene su propia instalación y su propia base de datos. Se entra con usuario y contraseña, y cada cargo tiene los permisos que tu empresa defina. Hay respaldo nocturno.</p></details>
-    <details><summary>¿Cómo funciona la prueba gratis?</summary><p>Son 14 días para usar Kisora. Para pedirla, escribe a contacto@kisora.cl.</p></details>
-    <details><summary>¿Qué pasa si no renuevo?</summary><p>Tienes 30 días de gracia. Luego, 60 días en modo solo lectura: puedes ver tu información, pero no modificarla. Pasado ese plazo, la instalación se archiva.</p></details>
-    <details><summary>¿Se puede usar desde el celular?</summary><p>Sí. Kisora se abre desde el navegador del celular, pensado para usarlo en terreno.</p></details>
-    <details><summary>¿Cuántos usuarios puedo tener?</summary><p>Cada usuario tiene un cargo con sus permisos, que tu empresa crea y ajusta. Las condiciones de usuarios las vemos en la cotización.</p></details>
-    <details><summary>¿Cómo es el soporte?</summary><p>Por correo, a contacto@kisora.cl.</p></details>
-    <details><summary>¿Puedo exportar mis datos?</summary><p>Sí. Administración descarga el último respaldo desde Ajustes, también cuando la instalación está en solo lectura.</p></details>
+<section class="seccion" id="faq">
+  <div class="contenedor angosto">
+    <h2>Preguntas frecuentes</h2>
+    <details><summary>¿Qué necesito para usar Kisora?</summary><p>Un navegador moderno y conexión a internet. Funciona en computador, tablet y celular, sin instalar nada.</p></details>
+    <details><summary>¿Mis datos están seguros?</summary><p>Cada empresa tiene su propia instalación y su propia base de datos. La conexión va cifrada (HTTPS) y se hace un respaldo automático cada noche.</p></details>
+    <details><summary>¿Puedo probar antes de pagar?</summary><p>Sí. Son 14 días de prueba con todas las funciones, sin tarjeta de crédito.</p></details>
+    <details><summary>¿Qué pasa si no renuevo?</summary><p>Tienes 30 días de gracia con todo funcionando y luego 60 días en solo lectura, donde nadie puede modificar datos pero Administración puede descargar el respaldo. Pasado ese plazo la instalación se archiva.</p></details>
+    <details><summary>¿Funciona en celular?</summary><p>Sí. Kisora se adapta a la pantalla del teléfono y se usa desde el navegador.</p></details>
+    <details><summary>¿Cuántos usuarios puedo tener?</summary><p>Cada instalación tiene un tope de usuarios activos según lo contratado. Cada usuario tiene su cargo y sus permisos. Cuéntanos el tamaño de tu equipo y lo cotizamos.</p></details>
+    <details><summary>¿Cómo es el soporte?</summary><p>Por correo, en horario laboral de Chile.</p></details>
+    <details><summary>¿Puedo llevarme mis datos?</summary><p>Sí. Administración descarga el último respaldo (base y planos) desde Ajustes, incluso en solo lectura.</p></details>
   </div>
 </section>
 
-<section id="contacto" class="cta">
-  <div class="w">
-    <h2>Pon orden en tu obra</h2>
-    <p>Pruébalo 14 días o pide tu cotización.</p>
-    <a class="btn" href="mailto:contacto@kisora.cl?subject=Quiero%20probar%20Kisora%20gratis%20por%2014%20d%C3%ADas">Probar gratis 14 días</a>
+<section class="cta-final" id="contacto">
+  <div class="contenedor">
+    <h2>Empieza a ordenar tu obra hoy</h2>
+    <p>Escríbenos y armamos tu prueba de 14 días.</p>
+    <a class="btn-blanco" href="mailto:contacto@kisora.cl?subject=Quiero%20probar%20Kisora%2014%20d%C3%ADas">Probar gratis 14 días</a>
+    <p class="microcopy">Sin tarjeta · contacto@kisora.cl</p>
   </div>
 </section>
+
 </main>
 
-<footer>
-  <div class="w">
-    <div class="grid">
-      <div><h3>Producto</h3><ul><li><a href="#funciones">Funciones</a></li><li><a href="#precios">Precios</a></li><li><a href="#preguntas">Preguntas</a></li><li><a href="https://app.kisora.cl/">Acceder</a></li></ul></div>
-      <div><h3>Legal</h3><ul><li><a href="/legal/terminos.html">Términos de uso</a></li><li><a href="/legal/privacidad.html">Política de privacidad</a></li><li><a href="/legal/licencia.html">Licencia de uso</a></li></ul></div>
-      <div><h3>Contacto</h3><ul><li><a href="mailto:contacto@kisora.cl">contacto@kisora.cl</a></li></ul></div>
-    </div>
-    <p class="copy">&copy; 2026 Kisora. Este sitio no usa cookies de seguimiento.</p>
+<footer class="pie">
+  <div class="contenedor pie-grid">
+    <div><strong class="pie-marca">Kisora</strong><p>Control de obras para constructoras</p></div>
+    <div><h3>Producto</h3><a href="#funciones">Funciones</a><a href="#precios">Precios</a><a href="#faq">Preguntas</a><a href="https://app.kisora.cl/">Acceder</a></div>
+    <div><h3>Legal</h3><a href="/legal/terminos.html">Términos de servicio</a><a href="/legal/privacidad.html">Política de privacidad</a><a href="/legal/licencia.html">Licencia de uso</a></div>
+    <div><h3>Contacto</h3><a href="mailto:contacto@kisora.cl">contacto@kisora.cl</a><span>Chile</span></div>
   </div>
+  <p class="copy">© 2026 Kisora. Todos los derechos reservados.</p>
 </footer>
+
 <script src="/js/main.js" defer></script>
 </body>
 </html>
