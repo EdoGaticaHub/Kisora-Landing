@@ -8,7 +8,13 @@ Página pública de https://kisora.cl. Sitio estático: HTML, CSS y JS vanilla. 
 
 Abrir http://localhost:8080 (las rutas son absolutas desde la raíz).
 
-## Desplegar
+## Desplegar (GitHub Pages)
+
+Cada push a `main` publica con `.github/workflows/pages.yml`. Una sola vez: Settings > Pages > Source: GitHub Actions; luego Custom domain: kisora.cl y Enforce HTTPS.
+
+DNS de kisora.cl: registros A a 185.199.108.153, 185.199.109.153, 185.199.110.153 y 185.199.111.153; www como CNAME a edogaticahub.github.io.
+
+## Desplegar (VPS alternativo)
 
     ./desplegar.sh usuario@servidor [/var/www/kisora-landing]
 
