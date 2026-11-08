@@ -80,7 +80,7 @@ Kisora trata estos datos exclusivamente por instrucción y cuenta de la empresa 
 | Datos en período de gracia (acceso completo) | 30 días después del fin de la licencia |
 | Datos en modo solo lectura | 60 días adicionales tras el período de gracia |
 | Copia de archivo (cifrada) | Hasta 365 días desde la terminación, solo para disputas legales |
-| Correo de una solicitud de prueba | Hasta que confirmes tu correo; si no lo confirmas, se elimina. Una vez confirmado, pasa a ser dato de la cuenta |
+| Correo de una solicitud de prueba | Hasta confirmar el enlace (vale 24 horas); si no se confirma, se elimina al vencer. Una vez confirmado, pasa a ser dato de la cuenta |
 | Datos del formulario de contacto | 12 meses desde la consulta |
 | Registros de acceso (logs) | 180 días |
 | Registro de aceptación de términos | Mientras exista la Instalación del cliente, incluyendo el período de archivo |
