@@ -22,13 +22,13 @@ Subir el zip a la VM y copiarlo a `/var/www/kisora` (etapa 5 de la guía). Bloqu
 
 ## Antes de anunciar (pendientes)
 
-- [ ] Que exista el buzón `contacto@kisora.cl` (MX en Cloudflare, Zoho). Todos los botones usan ese correo.
-- [ ] Revisión de abogado de `legal/` (hoy dicen «Borrador pendiente de revisión legal»).
+- [ ] Buzón de contacto: hoy `legal/` y `probar.html` usan `kisora.contacto@zohomail.com`; migrar a `contacto@kisora.cl` cuando exista (cambiar en `utilidades_legal.py` y `probar.html`).
+- [ ] Revisión de abogado de `legal/` (textos comerciales sin revisar por abogado).
 - [ ] Precio: la sección dice «Cotiza en 24 h». Cambiar cuando haya valores en UF.
 - [ ] Si se cambian los días de prueba, hay que cambiarlos en `index.html` (hero, prueba, FAQ, CTA) y `legal/terminos.html`, y en `app/licencia.py` del producto (hoy 14 días, gracia 30, solo lectura 60).
-- [ ] Cuando exista la demo en línea o el alta automática, reemplazar los `mailto:` de «Probar gratis».
+- [ ] El formulario de `probar.html` depende de `https://alta.kisora.cl/api/alta`; verificar que esté en línea (y con CORS para kisora.cl) antes de anunciar.
 - [ ] Imágenes: pantallas de `img/*.svg` son mockups ilustrativos (generados, datos inventados); fotos de obra (`img/*.webp`) son de Unsplash. Reemplazar por capturas reales cuando se quiera.
-- [ ] «Probar gratis», «Acceder» y `legal/` apuntan a `/en-construccion.html` o muestran «en construcción». Reactivar enlaces (`app.kisora.cl`, mailto, textos legales) cuando estén listos.
+- [ ] «Probar gratis», «Acceder» y `legal/` apuntan a `/en-construccion.html`. Reactivar enlaces (`app.kisora.cl`, contacto) cuando estén listos.
 
 ## Reglas
 

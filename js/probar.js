@@ -7,8 +7,8 @@ f.addEventListener("submit", async (e) => {
   try {
     const r = await fetch("https://alta.kisora.cl/api/alta", { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify(Object.fromEntries(new FormData(f))) });
-    const d = await r.json();
-    estado.textContent = r.ok ? "Listo. Revisa tu correo (y la carpeta de spam) y abre el enlace para crear tu prueba." : d.mensaje;
+    const d = await r.json().catch(() => ({}));
+    estado.textContent = r.ok ? "Listo. Revisa tu correo (y la carpeta de spam) y abre el enlace para crear tu prueba." : d.mensaje || "No pudimos crear tu prueba. Intenta de nuevo o escríbenos.";
     if (r.ok) f.reset();
   } catch { estado.textContent = "No pudimos conectar. Intenta de nuevo en unos minutos."; }
   b.disabled = false;

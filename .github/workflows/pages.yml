@@ -21,7 +21,7 @@ jobs:
       - name: Armar sitio
         run: |
           mkdir _site
-          cp -r index.html en-construccion.html css js legal img robots.txt sitemap.xml _site/
+          cp -r index.html probar.html en-construccion.html css js legal img robots.txt sitemap.xml _site/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
