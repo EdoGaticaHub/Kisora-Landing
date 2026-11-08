@@ -24,7 +24,7 @@ DNS de kisora.cl: registros A a 185.199.108.153, 185.199.109.153, 185.199.110.15
 
 ## Plazos
 
-14 días de prueba, 30 de gracia y 60 de solo lectura.
+14 días de prueba, 30 de gracia y 60 de solo lectura (`app/licencia.py`, plan básico). En el plan `beta` la prueba pasa directo a solo lectura por 30 días, sin gracia.
 
 ## Antes de anunciar (pendientes)
 
