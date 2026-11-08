@@ -12,7 +12,7 @@ Abrir http://localhost:8080 (las rutas son absolutas desde la raíz).
 
 ## Publicar
 
-kisora.cl se publica con GitHub Pages: cada push a `main` ejecuta `.github/workflows/pages.yml`, que copia `index.html`, `probar.html`, `404.html`, `css`, `js`, `legal`, `img`, `robots.txt` y `sitemap.xml` a `_site`. Una sola vez: Settings > Pages > Source: GitHub Actions; luego Custom domain: kisora.cl y Enforce HTTPS.
+kisora.cl se publica con GitHub Pages: cada push a `main` ejecuta `.github/workflows/pages.yml`, que copia `index.html`, `probar.html`, `404.html`, `error.html`, `css`, `js`, `legal`, `img`, `robots.txt` y `sitemap.xml` a `_site`. Una sola vez: Settings > Pages > Source: GitHub Actions; luego Custom domain: kisora.cl y Enforce HTTPS.
 
 DNS de kisora.cl: registros A a 185.199.108.153, 185.199.109.153, 185.199.110.153 y 185.199.111.153; www como CNAME a edogaticahub.github.io.
 
