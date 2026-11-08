@@ -27,7 +27,8 @@ Subir el zip a la VM y copiarlo a `/var/www/kisora` (etapa 5 de la guía). Bloqu
 - [ ] Precio: la sección dice «Cotiza en 24 h». Cambiar cuando haya valores en UF.
 - [ ] Si se cambian los días de prueba, hay que cambiarlos en `index.html` (hero, prueba, FAQ, CTA) y `legal/terminos.html`, y en `app/licencia.py` del producto (hoy 14 días, gracia 30, solo lectura 60).
 - [ ] Cuando exista la demo en línea o el alta automática, reemplazar los `mailto:` de «Probar gratis».
-- [ ] Capturas: salen de una demo con datos inventados (`utilidades/demo`, 1366×768, tema claro). Las de Compras, Proyectos y Pagos están recortadas arriba porque la captura completa mostraba filas tachadas y cabeceras superpuestas.
+- [ ] Imágenes: pantallas de `img/*.svg` son mockups ilustrativos (generados, datos inventados); fotos de obra (`img/*.webp`) son de Unsplash. Reemplazar por capturas reales cuando se quiera.
+- [ ] «Probar gratis», «Acceder» y `legal/` apuntan a `/en-construccion.html` o muestran «en construcción». Reactivar enlaces (`app.kisora.cl`, mailto, textos legales) cuando estén listos.
 
 ## Reglas
 
