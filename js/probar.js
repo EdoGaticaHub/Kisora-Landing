@@ -1,0 +1,15 @@
+// Envía el formulario al servicio de alta (alta.kisora.cl). Solo el correo es obligatorio.
+const f = document.getElementById("alta"), estado = document.getElementById("estado");
+f.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  if (!f.correo.value.includes("@")) { estado.textContent = "Escribe un correo válido."; f.correo.focus(); return; }
+  const b = f.querySelector("button"); b.disabled = true; estado.textContent = "Enviando…";
+  try {
+    const r = await fetch("https://alta.kisora.cl/api/alta", { method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(Object.fromEntries(new FormData(f))) });
+    const d = await r.json();
+    estado.textContent = r.ok ? "Listo. Revisa tu correo (y la carpeta de spam) y abre el enlace para crear tu prueba." : d.mensaje;
+    if (r.ok) f.reset();
+  } catch { estado.textContent = "No pudimos conectar. Intenta de nuevo en unos minutos."; }
+  b.disabled = false;
+});
