@@ -109,4 +109,4 @@ details p{color:#B6C2D6;padding-bottom:16px;max-width:65ch}
 .form input:not(.trampa){min-height:46px;padding:0 14px;border-radius:12px;border:1px solid var(--ln);background:var(--sf);color:var(--ink);font:inherit}
 .form .btn{margin-top:20px;justify-content:center;cursor:pointer}.form .btn:disabled{opacity:.6}
 .trampa{position:absolute;left:-999px;height:0;opacity:0}
-#estado{min-height:1.6em;color:var(--ok)}
+#estado{min-height:1.6em;color:var(--ok)}#estado.err{color:var(--wn)}
