@@ -27,6 +27,7 @@ Esta Política se rige por:
 ### 3.1 Datos del sitio web (kisora.cl)
 - Datos de navegación: dirección IP, tipo de navegador, páginas visitadas, fecha y hora de acceso.
 - Datos del formulario de contacto: nombre, correo electrónico, empresa, mensaje.
+- Datos de la solicitud de prueba (probar.html): correo electrónico (obligatorio), y nombre y empresa u obra (opcionales).
 - Kisora no usa cookies de terceros, publicidad ni analítica en su sitio web.
 
 ### 3.2 Datos de las cuentas de usuario
@@ -68,6 +69,7 @@ Kisora trata estos datos exclusivamente por instrucción y cuenta de la empresa 
 | Opiniones | Mejorar el producto | Consentimiento (art. 13 letra a) | Consentimiento (art. 4) |
 | Datos del personal y proveedores del cliente | Prestar el servicio contratado por la empresa | Ejecución del contrato (art. 13 letra e) | Consentimiento del titular, gestionado por la empresa |
 | Datos de navegación del sitio web | Seguridad y funcionamiento del sitio | Interés legítimo (art. 13 letra d) | Consentimiento (art. 4) |
+| Solicitud de prueba | Enviarte el enlace de confirmación y crear tu prueba gratuita | Ejecución de medidas precontractuales (art. 13 letra e) | Consentimiento (art. 4) |
 | Formulario de contacto | Responder consultas comerciales | Consentimiento (art. 13 letra a) | Consentimiento (art. 4) |
 
 ## 5. Cuánto tiempo conservamos los datos
@@ -78,6 +80,7 @@ Kisora trata estos datos exclusivamente por instrucción y cuenta de la empresa 
 | Datos en período de gracia (acceso completo) | 30 días después del fin de la licencia |
 | Datos en modo solo lectura | 60 días adicionales tras el período de gracia |
 | Copia de archivo (cifrada) | Hasta 365 días desde la terminación, solo para disputas legales |
+| Correo de una solicitud de prueba | Hasta confirmar el enlace (vale 24 horas); si no se confirma, se elimina al vencer. Una vez confirmado, pasa a ser dato de la cuenta |
 | Datos del formulario de contacto | 12 meses desde la consulta |
 | Registros de acceso (logs) | 180 días |
 | Registro de aceptación de términos | Mientras exista la Instalación del cliente, incluyendo el período de archivo |
