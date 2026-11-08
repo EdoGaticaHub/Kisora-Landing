@@ -1,0 +1,21 @@
+{
+  "extraKnownMarketplaces": {
+    "ui-ux-pro-max-skill": {
+      "source": {
+        "source": "github",
+        "repo": "nextlevelbuilder/ui-ux-pro-max-skill"
+      }
+    },
+    "front-end-checklist": {
+      "source": {
+        "source": "github",
+        "repo": "thedaviddias/Front-End-Checklist"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "ui-ux-pro-max@ui-ux-pro-max-skill": true,
+    "front-end-checklist@front-end-checklist": true,
+    "frontend-design@claude-plugins-official": true
+  }
+}
