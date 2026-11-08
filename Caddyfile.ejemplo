@@ -17,4 +17,13 @@ kisora.cl {
     @static path *.css *.js *.webp *.jpg *.png *.svg *.ico
     header @static Cache-Control "public, max-age=86400"
     header /index.html Cache-Control "no-cache"
+
+    # 403 se muestra como 404 para no revelar qué existe
+    handle_errors {
+        @nf expression {err.status_code} in [403, 404]
+        rewrite @nf /404.html
+        @srv expression {err.status_code} >= 500
+        rewrite @srv /error.html
+        file_server
+    }
 }

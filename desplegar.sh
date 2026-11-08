@@ -5,7 +5,7 @@ cd "$(dirname "$0")"
 rm -f kisora-web.zip
 python3 - <<'PY'
 import zipfile, pathlib
-inc = ["index.html", "probar.html", "404.html", "robots.txt", "sitemap.xml", "css", "js", "img", "legal"]
+inc = ["index.html", "probar.html", "404.html", "error.html", "robots.txt", "sitemap.xml", "css", "js", "img", "legal"]
 with zipfile.ZipFile("kisora-web.zip", "w", zipfile.ZIP_DEFLATED) as z:
     for i in inc:
         p = pathlib.Path(i)
