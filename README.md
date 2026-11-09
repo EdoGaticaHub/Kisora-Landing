@@ -38,3 +38,7 @@ DNS de kisora.cl: registros A a 185.199.108.153, 185.199.109.153, 185.199.110.15
 ## Reglas
 
 Sin frameworks ni CDN, fuentes del sistema, sin testimonios ni cifras inventadas, sin prometer lo que el producto no hace.
+
+## Fuente única del texto legal
+
+`legal-md/` es la fuente del texto público (términos, privacidad y licencia). El repo del producto (SIGEV-VSC) solo guarda plantillas internas en `docs/legal/`; cualquier cambio al texto público se hace acá.
