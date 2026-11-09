@@ -24,7 +24,7 @@ PLANTILLA = """<!DOCTYPE html>
 <link rel="stylesheet" href="/css/landing.css">
 </head>
 <body>
-<header class="mast"><div class="c"><a class="marca" href="/"><img src="/img/logo.svg" width="30" height="30" alt="">Kisora</a><a class="btn s" href="/">Volver al inicio</a></div></header>
+<header class="mast"><div class="c"><a class="marca" href="/"><img src="/img/logo-horizontal.svg" width="112" height="30" alt="Kisora"></a><a class="btn s" href="/">Volver al inicio</a></div></header>
 <main><section class="legal"><div class="c">
 <nav class="crumb" aria-label="Ruta"><a href="/">Inicio</a> &gt; <span>Legal</span> &gt; <span aria-current="page">{nombre}</span></nav>
 <h1>{titulo}</h1>
