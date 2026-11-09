@@ -22,7 +22,7 @@ jobs:
         run: |
           mkdir _site
           cp -r index.html probar.html 404.html error.html css js legal img robots.txt sitemap.xml _site/
-      - uses: actions/configure-pages@v5
+      - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
