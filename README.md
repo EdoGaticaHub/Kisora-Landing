@@ -33,7 +33,7 @@ DNS de kisora.cl: registros A a 185.199.108.153, 185.199.109.153, 185.199.110.15
 - [ ] Precio: la sección dice «Cotiza en 24 h». Cambiar cuando haya valores en UF.
 - [ ] Si se cambian los días de prueba, hay que cambiarlos en `index.html` (hero, prueba, FAQ, CTA) y `legal/terminos.html`, y en `app/licencia.py` del producto (ver «Plazos»).
 - [ ] El formulario de `probar.html` depende de `https://alta.kisora.cl/api/alta`; verificar que esté en línea (y con CORS para kisora.cl) antes de anunciar.
-- [ ] Imágenes: pantallas de `img/*.svg` son mockups ilustrativos (generados, datos inventados); fotos de obra (`img/*.webp`) son de Unsplash. Reemplazar por capturas reales cuando se quiera.
+- [ ] Imágenes: pantallas de `img/*.svg` son mockups ilustrativos (generados, datos inventados); `img/movil-*.webp` son capturas reales de la app con la base demo; fotos de obra (`img/*.webp`) son de Unsplash. Reemplazar por capturas reales cuando se quiera.
 
 ## Reglas
 
