@@ -120,3 +120,4 @@ details p{color:var(--mu2);padding-bottom:16px;max-width:65ch}
 .tema{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:12px;border:1px solid var(--ln);background:var(--sf);color:var(--ink);cursor:pointer}
 .tema:hover{background:var(--sf2)}
 .tema .luna{display:none}:root[data-tema=claro] .tema .sol{display:none}:root[data-tema=claro] .tema .luna{display:block}
+@media(max-width:24rem){.mast .c{gap:6px}.mast .btn.s{padding:0 10px;font-size:.82rem}.marca img{width:96px;height:auto}}
