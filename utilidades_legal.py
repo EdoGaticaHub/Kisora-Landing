@@ -22,9 +22,10 @@ PLANTILLA = """<!DOCTYPE html>
 <meta name="robots" content="noindex">
 <link rel="icon" href="/img/logo.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/css/landing.css">
+<script src="/js/tema.js"></script>
 </head>
 <body>
-<header class="mast"><div class="c"><a class="marca" href="/"><img src="/img/logo-horizontal.svg" width="112" height="30" alt="Kisora"></a><a class="btn s" href="/">Volver al inicio</a></div></header>
+<header class="mast"><div class="c"><a class="marca" href="/"><img class="solo-osc" src="/img/logo-horizontal-reverso.svg" width="112" height="30" alt="Kisora"><img class="solo-cla" src="/img/logo-horizontal.svg" width="112" height="30" alt=""></a><a class="btn s" href="/">Volver al inicio</a></div></header>
 <main><section class="legal"><div class="c">
 <nav class="crumb" aria-label="Ruta"><a href="/">Inicio</a> &gt; <span>Legal</span> &gt; <span aria-current="page">{nombre}</span></nav>
 <h1>{titulo}</h1>
