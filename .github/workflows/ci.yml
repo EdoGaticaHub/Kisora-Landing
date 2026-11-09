@@ -1,0 +1,13 @@
+name: Validar HTML
+on:
+  pull_request: {}
+  workflow_dispatch: {}
+permissions:
+  contents: read
+jobs:
+  html:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: npx --yes htmlhint@1.1.4 index.html probar.html 404.html error.html
+      - run: python3 -m py_compile utilidades_legal.py
