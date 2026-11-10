@@ -7,6 +7,7 @@
 <meta name="description" content="Plataforma de gestión de obras para constructoras chilenas. Compras, bodega, proyectos, logística y pagos en un solo lugar.">
 <link rel="canonical" href="https://kisora.cl/">
 <meta name="theme-color" content="#F7F6F3">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; connect-src 'self' https://alta.kisora.cl; object-src 'none'; base-uri 'self'; form-action 'self'">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_CL">
 <meta property="og:site_name" content="Kisora">
@@ -16,6 +17,7 @@
 <meta property="og:image" content="https://kisora.cl/img/og.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/img/logo.svg" type="image/svg+xml">
+<link rel="manifest" href="/manifest.webmanifest">
 <link rel="apple-touch-icon" href="/img/icon-512.png">
 <link rel="stylesheet" href="/css/landing.css">
 <script type="application/ld+json">
@@ -91,7 +93,7 @@
   </div>
 </section>
 
-<section id="funciones" style="padding-block:0 96px">
+<section id="funciones" class="s0">
 <div class="c">
 <span class="tag">Y además</span>
 <h2 class="ttl">Lo que ya trae por dentro</h2>
@@ -107,12 +109,12 @@
 <p class="sub">Capturas reales de la plataforma con datos de demostración.</p>
 </div>
 </section>
-<section id="terreno" style="padding-block:0 96px">
+<section id="terreno" class="s0">
   <div class="c">
     <div class="tira">
-      <figure class="foto" style="margin:0"><img src="/img/hero-obra.webp" width="1600" height="1067" loading="lazy" alt="Grúas sobre una obra en construcción"><span>Planifica</span></figure>
-      <figure class="foto" style="margin:0"><img src="/img/rebar.webp" width="1600" height="1067" loading="lazy" alt="Trabajadores armando fierros en una losa"><span>Ejecuta</span></figure>
-      <figure class="foto" style="margin:0"><img src="/img/equipo.webp" width="1600" height="1067" loading="lazy" alt="Equipo de obra revisando el avance en terreno"><span>Controla</span></figure>
+      <figure class="foto"><img src="/img/hero-obra.webp" srcset="/img/hero-obra-800.webp 800w, /img/hero-obra.webp 1600w" sizes="(max-width:60rem) 100vw, 540px" width="1600" height="1067" loading="lazy" alt="Grúas sobre una obra en construcción"><span>Planifica</span></figure>
+      <figure class="foto"><img src="/img/rebar.webp" srcset="/img/rebar-800.webp 800w, /img/rebar.webp 1600w" sizes="(max-width:60rem) 100vw, 540px" width="1600" height="1067" loading="lazy" alt="Trabajadores armando fierros en una losa"><span>Ejecuta</span></figure>
+      <figure class="foto"><img src="/img/equipo.webp" srcset="/img/equipo-800.webp 800w, /img/equipo.webp 1600w" sizes="(max-width:60rem) 100vw, 540px" width="1600" height="1067" loading="lazy" alt="Equipo de obra revisando el avance en terreno"><span>Controla</span></figure>
     </div>
     <p class="sub">Fotografías de referencia.</p>
   </div>
@@ -141,9 +143,9 @@
     <div class="card">
       <span class="tag">Precios</span>
       <h2>Un precio por instalación</h2>
-      <p class="mu" style="margin-top:8px">Suscripción anual en UF netas.</p>
+      <p class="mu pr-sub">Suscripción anual en UF netas.</p>
       <p class="cifra">Cotiza en 24 h</p>
-      <p style="margin-top:24px"><a class="btn p" href="mailto:kisora.contacto@zohomail.com">Pedir cotización</a></p>
+      <p class="pr-cta"><a class="btn p" href="mailto:kisora.contacto@zohomail.com">Pedir cotización</a></p>
     </div>
     <ul>
       <li>Compras y bodega, Proyectos, Logística, Pagos y Personal</li>

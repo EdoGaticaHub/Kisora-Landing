@@ -2,7 +2,8 @@
 const f = document.getElementById("alta"), estado = document.getElementById("estado");
 f.addEventListener("submit", async (e) => {
   e.preventDefault(); estado.className = "";
-  if (!f.correo.value.includes("@")) { estado.className = "err"; estado.textContent = "Escribe un correo válido."; f.correo.focus(); return; }
+  f.correo.removeAttribute("aria-invalid");
+  if (!f.correo.checkValidity()) { f.correo.setAttribute("aria-invalid", "true"); estado.className = "err"; estado.textContent = "Escribe un correo válido."; f.correo.focus(); return; }
   const b = f.querySelector("button"); b.disabled = true; estado.textContent = "Enviando…";
   try {
     const r = await fetch("https://alta.kisora.cl/api/alta", { method: "POST", headers: { "Content-Type": "application/json" },
