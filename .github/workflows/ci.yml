@@ -11,3 +11,5 @@ jobs:
       - uses: actions/checkout@v4
       - run: npx --yes htmlhint@1.1.4 index.html probar.html 404.html error.html
       - run: python3 -m py_compile utilidades_legal.py
+      - name: Todo url(/...) del CSS existe
+        run: grep -oE 'url\(/[^)]+\)' css/landing.css | sed -E 's#url\(/(.*)\)#\1#' | while read f; do test -e "$f" || { echo "falta $f"; exit 1; }; done
