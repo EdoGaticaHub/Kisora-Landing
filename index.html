@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kisora: gestión de obras para constructoras | Chile</title>
+<title>Kisora: gestión de obras para constructoras de Chile</title>
 <meta name="description" content="Plataforma de gestión de obras para constructoras chilenas. Compras, bodega, proyectos, logística y pagos en un solo lugar.">
 <link rel="canonical" href="https://kisora.cl/">
 <meta name="theme-color" content="#F7F6F3">
@@ -20,6 +20,7 @@
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="apple-touch-icon" href="/img/icon-512.png">
 <link rel="stylesheet" href="/css/landing.css">
+<link rel="stylesheet" href="/css/inicio.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
 {"@type":"Organization","name":"Kisora","url":"https://kisora.cl/","logo":"https://kisora.cl/img/icon-512.png","areaServed":"CL"},
@@ -27,6 +28,7 @@
 ]}
 </script>
 <script src="/js/tema.js"></script>
+<script src="/js/inicio.js" defer></script>
 </head>
 <body>
 <a class="saltar" href="#contenido">Saltar al contenido</a>
@@ -34,7 +36,7 @@
 <header class="mast">
   <div class="c">
     <a class="marca" href="/" aria-label="Kisora, inicio"><img class="solo-osc" src="/img/logo-horizontal-reverso.svg" width="112" height="30" alt="Kisora"><img class="solo-cla" src="/img/logo-horizontal.svg" width="112" height="30" alt=""></a>
-    <nav aria-label="Principal"><a href="#flujo">Plataforma</a><a href="#movil">En el teléfono</a><a href="#terreno">En terreno</a><a href="#precios">Precios</a><a href="#faq">Preguntas</a></nav>
+    <nav aria-label="Principal"><a href="#flujo">Flujo</a><a href="#plataforma">Plataforma</a><a href="#movil">Teléfono</a><a href="#modulos">Módulos</a><a href="#datos">Seguridad</a><a href="#precios">Precios</a><a href="#faq">Preguntas</a></nav>
     <a class="btn s" href="https://clientes.kisora.cl/">Acceder</a>
     <a class="btn p s" href="/probar.html">Probar gratis</a>
   </div>
@@ -42,85 +44,119 @@
 
 <main id="contenido">
 
-<section class="hero">
-  <div class="c hg">
-    <div>
-      <span class="tag">Software para constructoras</span>
-      <h1>Tu obra, bajo control de punta a punta</h1>
-      <p class="lead">Compras, bodega, logística y pagos en un solo sistema. De la orden de compra a la factura pagada.</p>
+<section class="k-hero">
+  <div class="c k-hg">
+    <div class="k-in">
+      <span class="tag">Software de gestión de obras</span>
+      <h1>La obra, de la orden de compra a la factura pagada</h1>
+      <p class="lead">Compras y bodega, proyectos, logística, pagos y personal en un solo sistema para constructoras de Chile.</p>
       <div class="acc">
-        <a class="btn p" href="/probar.html">Probar gratis</a>
-        <a class="btn" href="#flujo">Ver la plataforma</a>
+        <a class="btn p" href="/probar.html">Probar gratis 14 días</a>
+        <a class="btn" href="#plataforma">Ver la plataforma</a>
       </div>
-      <p class="nota">Prueba de 14 días, sin tarjeta de crédito. ¿Ya tienes cuenta? <a href="https://clientes.kisora.cl/">Accede a Kisora</a>.</p>
+      <p class="nota">Sin tarjeta de crédito. ¿Ya tienes cuenta? <a href="https://clientes.kisora.cl/">Accede a Kisora</a>.</p>
     </div>
-    <div class="win"><img class="solo-osc" src="/img/hero-panel.svg" width="1100" height="620" alt="Panel Mi jornada con avisos de facturas vencidas, órdenes por recibir y avance por obra"><img class="solo-cla" src="/img/hero-panel-oscuro.svg" width="1100" height="620" alt=""></div>
+    <div class="k-app k-in" role="img" aria-label="Pantalla Mi jornada de Kisora: una factura vencida sin pagar, materiales sin retirar del proveedor, destinos de compra sin comité y materiales bajo el mínimo de bodega">
+      <div class="k-bar"><i></i><i></i><i></i><b>Mi jornada</b></div>
+      <div class="k-chips"><span class="k-chip"><b>10</b> Unidades en obra</span><span class="k-chip w"><b>4</b> OC por recibir</span><span class="k-chip w"><b>2/3</b> Paradas de hoy</span></div>
+      <ul class="k-lista">
+        <li class="r"><span>Factura vencida sin pagar</span><b>1</b></li>
+        <li><span>Materiales sin retirar del proveedor hace rato</span><b>6</b></li>
+        <li><span>Destinos de compra sin comité</span><b>2</b></li>
+        <li><span>Materiales bajo el mínimo de bodega</span><b>2</b></li>
+      </ul>
+    </div>
   </div>
 </section>
 
-<section class="band" id="prueba">
+<section id="flujo" class="k-sec">
   <div class="c">
-    <span class="tag">Prueba</span>
-    <h2>14 días con tus propias obras</h2>
-    <ol class="regla">
-      <li><span class="dia">Día 0</span><p>Dejas tu correo y recibes el enlace para crear tu prueba.</p></li>
-      <li><span class="dia">Día 1</span><p>Cargas tus obras y tu equipo entra.</p></li>
-      <li><span class="dia">Día 14</span><p>Decides si sigues. Cotizamos en 24 h.</p></li>
-      <li><span class="dia">+30 días</span><p>De gracia, con todo funcionando.</p></li>
+    <span class="tag">Flujo</span>
+    <h2>Un solo hilo, de la compra al pago</h2>
+    <ol class="k-flujo">
+      <li><a href="#plataforma" data-ir="compras"><span class="k-nd">1</span><h3>Orden de compra</h3><p>Por proveedor y destino.</p></a></li>
+      <li><a href="#plataforma" data-ir="compras"><span class="k-nd">2</span><h3>Bodega</h3><p>Recepción y aviso de materiales bajo el mínimo.</p></a></li>
+      <li><a href="#plataforma" data-ir="logistica"><span class="k-nd">3</span><h3>Logística</h3><p>Viaje con chofer, vehículo y confirmación de cada parada.</p></a></li>
+      <li><a href="#plataforma" data-ir="pagos"><span class="k-nd">4</span><h3>Factura</h3><p>Por pagar o pagada, con su antigüedad a la vista.</p></a></li>
+      <li><a href="#plataforma" data-ir="proyectos"><span class="k-nd">5</span><h3>Proyecto</h3><p>Todo queda en su obra, con presupuesto, planos y Carta Gantt.</p></a></li>
     </ol>
   </div>
 </section>
 
-<section id="flujo">
+<section id="plataforma" class="k-sec k-alt">
   <div class="c">
     <span class="tag">Plataforma</span>
-    <h2 class="ttl">Una pantalla por cada paso de la obra</h2>
-    <div class="paso"><div><span class="n">01</span><h3>Compras y bodega</h3><p>Órdenes de compra por proveedor y destino, recepción y aviso de materiales bajo el mínimo.</p></div>
-      <div class="win"><img class="solo-osc" src="/img/compras.svg" width="1100" height="620" loading="lazy" alt="Órdenes de compra y materiales bajo el mínimo"><img class="solo-cla" src="/img/compras-oscuro.svg" width="1100" height="620" loading="lazy" alt=""></div></div>
-    <div class="paso"><div><span class="n">02</span><h3>Proyectos</h3><p>Cada obra con sus unidades, presupuesto, planos y Carta Gantt.</p></div>
-      <div class="win"><img class="solo-osc" src="/img/proyectos.svg" width="1100" height="620" loading="lazy" alt="Proyectos con avance y Carta Gantt"><img class="solo-cla" src="/img/proyectos-oscuro.svg" width="1100" height="620" loading="lazy" alt=""></div></div>
-    <div class="paso"><div><span class="n">03</span><h3>Logística</h3><p>Viajes con chofer y vehículo, y confirmación de cada parada.</p></div>
-      <div class="win"><img class="solo-osc" src="/img/logistica.svg" width="1100" height="620" loading="lazy" alt="Ruta de reparto y viajes de hoy"><img class="solo-cla" src="/img/logistica-oscuro.svg" width="1100" height="620" loading="lazy" alt=""></div></div>
-    <div class="paso"><div><span class="n">04</span><h3>Pagos</h3><p>Facturas por pagar y pagadas, con su antigüedad a la vista.</p></div>
-      <div class="win"><img class="solo-osc" src="/img/pagos.svg" width="1100" height="620" loading="lazy" alt="Facturas por pagar, vencidas y antigüedad"><img class="solo-cla" src="/img/pagos-oscuro.svg" width="1100" height="620" loading="lazy" alt=""></div></div>
-    <div class="paso"><div><span class="n">05</span><h3>Mi jornada</h3><p>Lo pendiente del día, la agenda y los recordatorios, en la primera pantalla al entrar.</p></div>
-<div class="win"><img class="solo-osc" src="/img/jornada.svg" width="1100" height="620" loading="lazy" alt="Mi jornada con lo pendiente y la agenda del día"><img class="solo-cla" src="/img/jornada-oscuro.svg" width="1100" height="620" loading="lazy" alt=""></div></div>
-<div class="paso"><div><span class="n">06</span><h3>Calendario</h3><p>Mes, semana y día con la Carta Gantt, las entregas de órdenes de compra y el pronóstico del tiempo por obra.</p></div>
-<div class="win"><img class="solo-osc" src="/img/calendario.svg" width="1100" height="620" loading="lazy" alt="Calendario mensual con tareas de la Carta Gantt, entregas y recordatorios"><img class="solo-cla" src="/img/calendario-oscuro.svg" width="1100" height="620" loading="lazy" alt=""></div></div>
-<div class="paso"><div><span class="n">07</span><h3>Personal</h3><p>Nómina, cuadrillas con su jefe y un tablero semanal que se copia de una semana a otra.</p></div>
-<div class="win"><img class="solo-osc" src="/img/personal.svg" width="1100" height="620" loading="lazy" alt="Cuadrillas y tablero semanal de asignación"><img class="solo-cla" src="/img/personal-oscuro.svg" width="1100" height="620" loading="lazy" alt=""></div></div>
-<p class="sub">Pantallas ilustrativas con datos inventados.</p>
+    <h2>Una pantalla por cada paso de la obra</h2>
+    <div class="k-tabs" role="tablist" aria-label="Pantallas de Kisora"><button type="button" role="tab" id="t-jornada" aria-controls="p-jornada" aria-selected="true" tabindex="0">Mi jornada</button><button type="button" role="tab" id="t-compras" aria-controls="p-compras" aria-selected="false" tabindex="-1">Compras y bodega</button><button type="button" role="tab" id="t-proyectos" aria-controls="p-proyectos" aria-selected="false" tabindex="-1">Proyectos</button><button type="button" role="tab" id="t-logistica" aria-controls="p-logistica" aria-selected="false" tabindex="-1">Logística</button><button type="button" role="tab" id="t-pagos" aria-controls="p-pagos" aria-selected="false" tabindex="-1">Pagos</button><button type="button" role="tab" id="t-personal" aria-controls="p-personal" aria-selected="false" tabindex="-1">Personal</button><button type="button" role="tab" id="t-gantt" aria-controls="p-gantt" aria-selected="false" tabindex="-1">Carta Gantt</button></div>
+    <div class="k-panels"><div class="k-panel" role="tabpanel" id="p-jornada" aria-labelledby="t-jornada"><div class="k-ptxt"><h3>Mi jornada</h3><p>Lo pendiente del día, la agenda y los recordatorios, en la primera pantalla al entrar. Lo vencido aparece primero.</p></div><div class="win"><img class="solo-osc" src="/img/app-jornada-claro.webp" width="1440" height="900" loading="lazy" alt="Mi jornada con lo pendiente y la agenda del día"><img class="solo-cla" src="/img/app-jornada-oscuro.webp" width="1440" height="900" loading="lazy" alt=""></div></div><div class="k-panel" role="tabpanel" id="p-compras" aria-labelledby="t-compras"><div class="k-ptxt"><h3>Compras y bodega</h3><p>Órdenes de compra por proveedor y destino, recepción y aviso de materiales bajo el mínimo. Varias bodegas, con traslado entre ellas.</p></div><div class="win"><img class="solo-osc" src="/img/app-compras-claro.webp" width="1440" height="900" loading="lazy" alt="Órdenes de compra y materiales bajo el mínimo"><img class="solo-cla" src="/img/app-compras-oscuro.webp" width="1440" height="900" loading="lazy" alt=""></div></div><div class="k-panel" role="tabpanel" id="p-proyectos" aria-labelledby="t-proyectos"><div class="k-ptxt"><h3>Proyectos</h3><p>Cada obra con sus unidades, presupuesto y planos, en una lista por estado: en ejecución, terminadas y por destinar.</p></div><div class="win"><img class="solo-osc" src="/img/app-proyectos-claro.webp" width="1440" height="900" loading="lazy" alt="Proyectos con avance y Carta Gantt"><img class="solo-cla" src="/img/app-proyectos-oscuro.webp" width="1440" height="900" loading="lazy" alt=""></div></div><div class="k-panel" role="tabpanel" id="p-logistica" aria-labelledby="t-logistica"><div class="k-ptxt"><h3>Logística</h3><p>Viajes con chofer y vehículo, y confirmación de cada parada. El chofer cierra con foto, también sin señal.</p></div><div class="win"><img class="solo-osc" src="/img/app-logistica-claro.webp" width="1440" height="900" loading="lazy" alt="Ruta de reparto y viajes de hoy"><img class="solo-cla" src="/img/app-logistica-oscuro.webp" width="1440" height="900" loading="lazy" alt=""></div></div><div class="k-panel" role="tabpanel" id="p-pagos" aria-labelledby="t-pagos"><div class="k-ptxt"><h3>Pagos</h3><p>Facturas por pagar y pagadas, con su antigüedad a la vista.</p></div><div class="win"><img class="solo-osc" src="/img/app-pagos-claro.webp" width="1440" height="900" loading="lazy" alt="Facturas por pagar, vencidas y antigüedad"><img class="solo-cla" src="/img/app-pagos-oscuro.webp" width="1440" height="900" loading="lazy" alt=""></div></div><div class="k-panel" role="tabpanel" id="p-personal" aria-labelledby="t-personal"><div class="k-ptxt"><h3>Personal</h3><p>Nómina, cuadrillas con su jefe y un tablero semanal que se copia de una semana a otra.</p></div><div class="win"><img class="solo-osc" src="/img/app-personal-claro.webp" width="1440" height="900" loading="lazy" alt="Cuadrillas y tablero semanal de asignación"><img class="solo-cla" src="/img/app-personal-oscuro.webp" width="1440" height="900" loading="lazy" alt=""></div></div><div class="k-panel" role="tabpanel" id="p-gantt" aria-labelledby="t-gantt"><div class="k-ptxt"><h3>Carta Gantt</h3><p>Vistas de día, semana y mes, con línea base. Importa y exporta MS Project (XML), GanttProject y CSV.</p></div><div class="win"><img class="solo-osc" src="/img/app-gantt-claro.webp" width="1440" height="900" loading="lazy" alt="Carta Gantt en vista mensual, con tareas terminadas, en curso y previstas"><img class="solo-cla" src="/img/app-gantt-oscuro.webp" width="1440" height="900" loading="lazy" alt=""></div></div></div>
+    <p class="sub">Capturas reales de la plataforma con datos de demostración.</p>
   </div>
 </section>
 
-<section id="funciones" class="s0">
-<div class="c">
-<span class="tag">Y además</span>
-<h2 class="ttl">Lo que ya trae por dentro</h2>
-<div class="fns"><div class="fn"><h3>Mi jornada</h3><p>Al entrar ves lo pendiente y la agenda del día. Lo vencido aparece primero.</p></div><div class="fn"><h3>Calendario de obra</h3><p>Mes, semana y día con la Carta Gantt, las entregas de órdenes de compra y el pronóstico del tiempo por obra. Con recordatorios.</p></div><div class="fn"><h3>Carta Gantt</h3><p>Importa y exporta MS Project (XML), GanttProject y CSV. Cada obra con su estado.</p></div><div class="fn"><h3>Planos</h3><p>Cada plano asociado a sus viviendas y unidades, con búsqueda por número y revisión.</p></div><div class="fn"><h3>Varias bodegas</h3><p>Saldo y mínimo por bodega, traslado entre ellas y deshacer de los últimos movimientos.</p></div><div class="fn"><h3>Chofer en terreno</h3><p>Cierra paradas con foto y sigue funcionando sin señal: se envía al reconectar.</p></div><div class="fn"><h3>Personal y cuadrillas</h3><p>Nómina, jefes de cuadrilla y tablero semanal con copia de la semana anterior.</p></div><div class="fn"><h3>Documentos por módulo</h3><p>Plantillas listas para vivienda social, mejoramiento y obra pública, llenadas desde tus datos.</p></div></div>
-</div>
-</section>
-<section id="movil" class="band">
-<div class="c">
-<span class="tag">En el teléfono</span>
-<h2 class="ttl">La misma plataforma, en vista móvil</h2>
-<div class="tels"><figure class="tel"><img class="solo-cla" src="/img/movil-jornada.webp" width="780" height="1688" loading="lazy" alt="Mi jornada en el teléfono, con lo pendiente y la navegación inferior"><img class="solo-osc" src="/img/movil-jornada-claro.webp" width="780" height="1688" loading="lazy" alt=""><figcaption>Mi jornada</figcaption></figure><figure class="tel"><img class="solo-cla" src="/img/movil-pagos.webp" width="780" height="1688" loading="lazy" alt="Pagos en el teléfono, con total por pagar y antigüedad"><img class="solo-osc" src="/img/movil-pagos-claro.webp" width="780" height="1688" loading="lazy" alt=""><figcaption>Pagos</figcaption></figure><figure class="tel"><img class="solo-cla" src="/img/movil-logistica.webp" width="780" height="1688" loading="lazy" alt="Logística en el teléfono, con viajes y paradas de hoy"><img class="solo-osc" src="/img/movil-logistica-claro.webp" width="780" height="1688" loading="lazy" alt=""><figcaption>Logística</figcaption></figure></div>
-<ul class="mv"><li>Las mismas pantallas, los mismos datos y los mismos permisos.</li><li>Navegación abajo, al alcance del pulgar.</li><li>La acción principal queda fija, en un botón grande.</li><li>El chofer cierra paradas con foto aunque se vaya la señal.</li></ul>
-<p class="sub">Capturas reales de la plataforma con datos de demostración.</p>
-</div>
-</section>
-<section id="terreno" class="s0">
-  <div class="c">
-    <div class="tira">
-      <figure class="foto"><img src="/img/hero-obra.webp" srcset="/img/hero-obra-800.webp 800w, /img/hero-obra.webp 1600w" sizes="(max-width:60rem) 100vw, 540px" width="1600" height="1067" loading="lazy" alt="Grúas sobre una obra en construcción"><span>Planifica</span></figure>
-      <figure class="foto"><img src="/img/rebar.webp" srcset="/img/rebar-800.webp 800w, /img/rebar.webp 1600w" sizes="(max-width:60rem) 100vw, 540px" width="1600" height="1067" loading="lazy" alt="Trabajadores armando fierros en una losa"><span>Ejecuta</span></figure>
-      <figure class="foto"><img src="/img/equipo.webp" srcset="/img/equipo-800.webp 800w, /img/equipo.webp 1600w" sizes="(max-width:60rem) 100vw, 540px" width="1600" height="1067" loading="lazy" alt="Equipo de obra revisando el avance en terreno"><span>Controla</span></figure>
+<section id="movil" class="k-sec">
+  <div class="c k-mv">
+    <div>
+      <span class="tag">En el teléfono</span>
+      <h2>La misma plataforma, en el bolsillo</h2>
+      <ul class="k-lis">
+        <li>Las mismas pantallas, los mismos datos y los mismos permisos.</li>
+        <li>Navegación abajo, al alcance del pulgar.</li>
+        <li>La acción principal queda fija, en un botón grande.</li>
+        <li>El chofer cierra paradas con foto aunque se vaya la señal.</li>
+      </ul>
+      <p class="sub">Capturas reales de la plataforma con datos de demostración.</p>
     </div>
-    <p class="sub">Fotografías de referencia.</p>
+    <div class="k-tels">
+      <div class="k-tel"><img class="solo-cla" src="/img/movil-jornada.webp" width="780" height="1688" loading="lazy" alt="Mi jornada en el teléfono, con lo pendiente y la navegación inferior"><img class="solo-osc" src="/img/movil-jornada-claro.webp" width="780" height="1688" loading="lazy" alt=""></div>
+      <div class="k-tel"><img class="solo-cla" src="/img/movil-pagos.webp" width="780" height="1688" loading="lazy" alt="Pagos en el teléfono, con total por pagar y antigüedad"><img class="solo-osc" src="/img/movil-pagos-claro.webp" width="780" height="1688" loading="lazy" alt=""></div>
+      <div class="k-tel"><img class="solo-cla" src="/img/movil-logistica.webp" width="780" height="1688" loading="lazy" alt="Logística en el teléfono, con viajes y paradas de hoy"><img class="solo-osc" src="/img/movil-logistica-claro.webp" width="780" height="1688" loading="lazy" alt=""></div>
+    </div>
   </div>
 </section>
 
-<section class="datos" id="datos">
+<section id="modulos" class="k-sec k-alt">
+  <div class="c">
+    <span class="tag">Módulos por tipo de trabajo</span>
+    <h2>Enciende solo el tipo de obra que haces</h2>
+    <div class="k-mod">
+      <div class="k-core"><h3>Núcleo, siempre activo</h3><p>Compras y bodega, Proyectos, Logística, Pagos y Personal.</p></div>
+      <div class="k-m"><h3>Vivienda nueva con subsidio</h3><p>DS 49, DS 19 y DS 10.</p></div>
+      <div class="k-m"><h3>Mejoramiento y ampliación</h3><p>DS 27.</p></div>
+      <div class="k-m"><h3>Obra pública</h3><p>DS 75, MOP.</p></div>
+    </div>
+    <p class="k-p">Cada módulo trae sus documentos y plantillas, llenados desde tus datos. Apagar un módulo oculta sus datos, nunca los borra.</p>
+  </div>
+</section>
+
+<section id="funciones" class="k-sec">
+  <div class="c">
+    <span class="tag">Y además</span>
+    <h2>Lo que ya trae por dentro</h2>
+    <div class="k-fns">
+      <div class="fn"><h3>Carta Gantt</h3><p>Importa y exporta MS Project (XML), GanttProject y CSV. Cada obra con su estado.</p></div>
+      <div class="fn"><h3>Planos</h3><p>Cada plano asociado a sus viviendas y unidades, con búsqueda por número y revisión.</p></div>
+      <div class="fn"><h3>Varias bodegas</h3><p>Saldo y mínimo por bodega, traslado entre ellas y deshacer de los últimos movimientos.</p></div>
+      <div class="fn"><h3>Chofer en terreno</h3><p>Cierra paradas con foto y sigue funcionando sin señal: se envía al reconectar.</p></div>
+      <div class="fn"><h3>Personal y cuadrillas</h3><p>Nómina, jefes de cuadrilla y tablero semanal con copia de la semana anterior.</p></div>
+      <div class="fn"><h3>Calendario de obra</h3><p>Carta Gantt, entregas de órdenes de compra y pronóstico del tiempo por obra. Con recordatorios.</p></div>
+      <div class="fn"><h3>Nube en solo lectura</h3><p>Drive, OneDrive y Dropbox: Kisora lista tus carpetas y archivos sin modificarlos.</p></div>
+      <div class="fn"><h3>Permisos por cargo</h3><p>Cada empresa crea sus cargos y define qué puede hacer cada uno.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="terreno" class="k-sec k-terr">
+  <div class="c">
+    <div class="k-tira">
+      <div class="foto"><img src="/img/hero-obra.webp" srcset="/img/hero-obra-800.webp 800w, /img/hero-obra.webp 1600w" sizes="(max-width:60rem) 100vw, 540px" width="1600" height="1067" loading="lazy" alt="Grúas sobre una obra en construcción"></div>
+      <div class="foto"><img src="/img/rebar.webp" srcset="/img/rebar-800.webp 800w, /img/rebar.webp 1600w" sizes="(max-width:60rem) 100vw, 540px" width="1600" height="1067" loading="lazy" alt="Trabajadores armando fierros en una losa"></div>
+      <div class="foto"><img src="/img/equipo.webp" srcset="/img/equipo-800.webp 800w, /img/equipo.webp 1600w" sizes="(max-width:60rem) 100vw, 540px" width="1600" height="1067" loading="lazy" alt="Equipo de obra revisando el avance en terreno"></div>
+    </div>
+    <p class="k-big"><span>Planifica.</span> <span>Ejecuta.</span> <span>Controla.</span></p>
+  </div>
+</section>
+
+<section class="datos k-sec" id="datos">
   <div class="c">
     <span class="tag">Seguridad</span>
     <h2>Tus datos quedan en tu instalación</h2>
@@ -130,49 +166,60 @@
       <div><dt>Respaldos</dt><dd>Cada noche</dd></div>
       <div><dt>Descarga</dt><dd>Base y planos, desde Ajustes</dd></div>
       <div><dt>Cifrado</dt><dd>AES-256 en los respaldos</dd></div>
-<div><dt>Acceso</dt><dd>Desde el navegador</dd></div>
+      <div><dt>Acceso</dt><dd>Desde el navegador</dd></div>
       <div><dt>Permisos</dt><dd>Por cargo</dd></div>
-<div><dt>Ingreso</dt><dd>Usuario, clave y código de empresa</dd></div>
-<div><dt>Nube</dt><dd>Drive, OneDrive y Dropbox, solo lectura</dd></div>
+      <div><dt>Ingreso</dt><dd>Usuario, clave y código de empresa</dd></div>
+      <div><dt>Nube</dt><dd>Drive, OneDrive y Dropbox, solo lectura</dd></div>
     </dl>
   </div>
 </section>
 
-<section id="precios">
-  <div class="c pr">
-    <div class="card">
+<section id="precios" class="k-sec">
+  <div class="c k-pr">
+    <div>
+      <span class="tag">Prueba</span>
+      <h2>14 días con tus propias obras</h2>
+      <ol class="k-reg">
+        <li><span class="dia">Día 0</span><p>Dejas tu correo y recibes el enlace para crear tu prueba.</p></li>
+        <li><span class="dia">Día 1</span><p>Cargas tus obras y tu equipo entra.</p></li>
+        <li><span class="dia">Día 14</span><p>Decides si sigues. Cotizamos en 24 h.</p></li>
+        <li><span class="dia">+30 días</span><p>De gracia, con todo funcionando.</p></li>
+      </ol>
+    </div>
+    <div class="card k-precio">
       <span class="tag">Precios</span>
-      <h2>Un precio por instalación</h2>
+      <h3>Un precio por instalación</h3>
       <p class="mu pr-sub">Suscripción anual en UF netas.</p>
       <p class="cifra">Cotiza en 24 h</p>
-      <p class="pr-cta"><a class="btn p" href="mailto:kisora.contacto@zohomail.com">Pedir cotización</a></p>
+      <ul>
+        <li>Compras y bodega, Proyectos, Logística, Pagos y Personal</li>
+        <li>Módulos con sus documentos: vivienda social (DS 49, DS 19, DS 10), mejoramiento (DS 27) y obra pública (DS 75)</li>
+        <li>Actualizaciones y soporte por correo</li>
+      </ul>
+      <div class="acc"><a class="btn p" href="mailto:kisora.contacto@zohomail.com">Pedir cotización</a><a class="btn" href="/probar.html">Probar gratis</a></div>
     </div>
-    <ul>
-      <li>Compras y bodega, Proyectos, Logística, Pagos y Personal</li>
-      <li>Módulos por tipo de trabajo, con sus documentos: vivienda social (DS 49, DS 19, DS 10), mejoramiento (DS 27) y obra pública (DS 75)</li>
-      <li>Actualizaciones y soporte por correo</li>
-    </ul>
   </div>
 </section>
 
-<section class="band" id="faq">
-  <div class="c">
-    <span class="tag">FAQ</span>
-    <h2 class="ttl">Preguntas frecuentes</h2>
+<section class="k-sec k-alt" id="faq">
+  <div class="c k-faq">
+    <div><span class="tag">Preguntas</span><h2>Preguntas frecuentes</h2></div>
+    <div>
     <details><summary>¿Qué necesito para usar Kisora?</summary><p>Un navegador y conexión a internet. Funciona en computador, tablet y celular.</p></details>
     <details><summary>¿Qué pasa si no renuevo?</summary><p>30 días de gracia con todo funcionando y luego 60 días en solo lectura, donde Administración puede descargar el respaldo. Después la instalación se archiva.</p></details>
     <details><summary>¿Cuántos usuarios puedo tener?</summary><p>Según lo contratado, cada uno con su cargo y sus permisos. Cuéntanos el tamaño de tu equipo y lo cotizamos.</p></details>
     <details><summary>¿Se conecta con mi Drive, OneDrive o Dropbox?</summary><p>Sí. Administración conecta la nube desde Ajustes y Kisora lista tus carpetas y archivos en modo solo lectura.</p></details>
-<details><summary>¿Sirve en terreno, sin señal?</summary><p>El chofer puede cerrar paradas y subir la foto sin conexión; se envía al reconectar. Para eso la pantalla debe estar abierta al perder la señal.</p></details>
-<details><summary>¿Cómo es el soporte?</summary><p>Por correo, en horario laboral de Chile.</p></details>
+    <details><summary>¿Sirve en terreno, sin señal?</summary><p>El chofer puede cerrar paradas y subir la foto sin conexión; se envía al reconectar. Para eso la pantalla debe estar abierta al perder la señal.</p></details>
+    <details><summary>¿Cómo es el soporte?</summary><p>Por correo, en horario laboral de Chile.</p></details>
     <details><summary>¿Puedo llevarme mis datos?</summary><p>Sí. Administración descarga el último respaldo (base y planos) desde Ajustes, incluso en solo lectura.</p></details>
+    </div>
   </div>
 </section>
 
-<section class="cta" id="contacto">
+<section class="cta k-sec" id="contacto">
   <div class="c">
     <h2>Ordena tu obra esta semana</h2>
-    <div class="acc">
+    <div class="acc ctr">
       <a class="btn p" href="/probar.html">Probar gratis</a>
       <a class="btn" href="https://clientes.kisora.cl/">Ya tengo cuenta</a>
       <a class="btn" href="mailto:kisora.contacto@zohomail.com">Contacto</a>
@@ -185,11 +232,11 @@
 <footer class="pie">
   <div class="c pg">
     <div><strong>Kisora</strong><p class="mu">Gestión de obras para constructoras</p></div>
-    <div><h3>Producto</h3><a href="#flujo">Plataforma</a><a href="#precios">Precios</a><a href="https://clientes.kisora.cl/">Acceder</a></div>
+    <div><h3>Producto</h3><a href="#plataforma">Plataforma</a><a href="#precios">Precios</a><a href="https://clientes.kisora.cl/">Acceder</a></div>
     <div><h3>Legal</h3><a href="/legal/terminos.html">Términos de servicio</a><a href="/legal/privacidad.html">Política de privacidad</a><a href="/legal/licencia.html">Licencia de uso</a></div>
     <div><h3>Contacto</h3><a href="mailto:kisora.contacto@zohomail.com">Contacto</a><span>Chile</span></div>
   </div>
-  <div class="c"><p class="copy">© 2026 Kisora. Todos los derechos reservados.</p></div>
+  <div class="c"><p class="copy">© 2026 Kisora. Todos los derechos reservados. Fotografías de Unsplash.</p></div>
 </footer>
 </body>
 </html>
