@@ -6,20 +6,32 @@
 <title>Probar gratis | Kisora</title>
 <meta name="description" content="Crea tu prueba gratuita de Kisora en minutos. Solo necesitas un correo.">
 <link rel="canonical" href="https://kisora.cl/probar.html">
+<meta name="theme-color" content="#F7F6F3">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; connect-src 'self' https://alta.kisora.cl; object-src 'none'; base-uri 'self'; form-action 'self'">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CL">
+<meta property="og:site_name" content="Kisora">
+<meta property="og:title" content="Probar gratis | Kisora">
+<meta property="og:description" content="Crea tu prueba gratuita de Kisora en minutos. Solo necesitas un correo.">
+<meta property="og:url" content="https://kisora.cl/probar.html">
+<meta property="og:image" content="https://kisora.cl/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/img/logo.svg" type="image/svg+xml">
+<link rel="manifest" href="/manifest.webmanifest">
 <link rel="stylesheet" href="/css/landing.css">
 <script src="/js/tema.js"></script>
 </head>
 <body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
 <header class="mast"><div class="c"><a class="marca" href="/"><img class="solo-osc" src="/img/logo-horizontal-reverso.svg" width="112" height="30" alt="Kisora"><img class="solo-cla" src="/img/logo-horizontal.svg" width="112" height="30" alt=""></a><a class="btn s" href="https://clientes.kisora.cl/">Ya tengo cuenta</a><a class="btn s" href="/">Volver al inicio</a></div></header>
-<main><section class="probar"><div class="c pb">
+<main id="contenido"><section class="probar"><div class="c pb">
 <div class="pb-form">
 <span class="tag">Prueba de 14 días</span>
 <h1>Prueba Kisora con tus obras</h1>
 <p class="lead">Uso completo, sin tarjeta. Solo necesitas un correo: el resto es opcional, también si trabajas por tu cuenta y no tienes empresa.</p>
 <form id="alta" class="form" novalidate>
   <label for="correo">Correo <span class="mu">(obligatorio)</span></label>
-  <input id="correo" name="correo" type="email" required autocomplete="email" placeholder="nombre@correo.cl">
+  <input id="correo" name="correo" type="email" required autocomplete="email" aria-describedby="estado" placeholder="nombre@correo.cl">
   <label for="nombre">Tu nombre <span class="mu">(opcional)</span></label>
   <input id="nombre" name="nombre" type="text" autocomplete="name">
   <label for="empresa">Empresa u obra <span class="mu">(opcional; déjalo en blanco si trabajas por tu cuenta)</span></label>
@@ -31,9 +43,9 @@
 </form>
 <noscript><p class="nota">Este formulario necesita JavaScript. Escríbenos a kisora.contacto@zohomail.com.</p></noscript>
 </div>
-<div class="pb-vis" aria-hidden="false">
+<div class="pb-vis">
 <div class="win"><img class="solo-osc" src="/img/hero-panel.svg" width="1100" height="620" alt="Panel Mi jornada con avisos de facturas vencidas, órdenes por recibir y avance por obra"><img class="solo-cla" src="/img/hero-panel-oscuro.svg" width="1100" height="620" alt=""></div>
-<div class="tira2"><figure class="foto" style="margin:0"><img src="/img/hero-obra.webp" width="1600" height="1067" alt="Grúas sobre una obra en construcción"><span>Planifica</span></figure><figure class="foto" style="margin:0"><img src="/img/equipo.webp" width="1600" height="1067" alt="Equipo de obra revisando el avance en terreno"><span>Controla</span></figure></div>
+<div class="tira2"><figure class="foto"><img src="/img/hero-obra.webp" srcset="/img/hero-obra-800.webp 800w, /img/hero-obra.webp 1600w" sizes="(max-width:60rem) 50vw, 280px" width="1600" height="1067" loading="lazy" alt="Grúas sobre una obra en construcción"><span>Planifica</span></figure><figure class="foto"><img src="/img/equipo.webp" srcset="/img/equipo-800.webp 800w, /img/equipo.webp 1600w" sizes="(max-width:60rem) 50vw, 280px" width="1600" height="1067" loading="lazy" alt="Equipo de obra revisando el avance en terreno"><span>Controla</span></figure></div>
 <p class="sub">Pantalla ilustrativa con datos inventados.</p>
 </div>
 </div></section></main>

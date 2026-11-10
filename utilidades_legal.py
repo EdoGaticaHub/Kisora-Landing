@@ -20,13 +20,15 @@ PLANTILLA = """<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{nombre} | Kisora</title>
 <meta name="robots" content="noindex">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; connect-src 'self' https://alta.kisora.cl; object-src 'none'; base-uri 'self'; form-action 'self'">
 <link rel="icon" href="/img/logo.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/css/landing.css">
 <script src="/js/tema.js"></script>
 </head>
 <body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
 <header class="mast"><div class="c"><a class="marca" href="/"><img class="solo-osc" src="/img/logo-horizontal-reverso.svg" width="112" height="30" alt="Kisora"><img class="solo-cla" src="/img/logo-horizontal.svg" width="112" height="30" alt=""></a><a class="btn s" href="/">Volver al inicio</a></div></header>
-<main><section class="legal"><div class="c">
+<main id="contenido"><section class="legal"><div class="c">
 <nav class="crumb" aria-label="Ruta"><a href="/">Inicio</a> &gt; <span>Legal</span> &gt; <span aria-current="page">{nombre}</span></nav>
 <h1>{titulo}</h1>
 <p class="fecha">Actualizado el {fecha}</p>
