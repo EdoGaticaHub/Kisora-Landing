@@ -6,8 +6,6 @@ h1{font-weight:700;letter-spacing:-.035em}h2{font-weight:650}
 .btn{border-radius:999px;min-height:52px;padding:0 28px}.btn.s{min-height:44px;padding:0 18px}
 .btn.p{box-shadow:0 10px 26px -10px var(--gs)}
 .tag{display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border-radius:999px;background:var(--h1);letter-spacing:.06em;margin-bottom:20px}
-.k-alt{border-block:0}
-.k-hero::before{opacity:.35}
 .k-chip,.k-lista li,.k-lis li,.fn,.k-mod>div{border-radius:16px}
 
 /* oficina y terreno */
@@ -25,11 +23,8 @@ h1{font-weight:700;letter-spacing:-.035em}h2{font-weight:650}
 @media(max-width:60rem){.k-dos{grid-template-columns:1fr}}
 .btn,.mast nav a{white-space:nowrap}
 .mast nav{gap:18px}
-.k-hero{padding-block:clamp(40px,6vw,72px) clamp(24px,4vw,48px)}
 /* Hero con fotografía, cinta de obra y banda fotográfica. */
-.k-hero{background:var(--bg)}
-.k-hero::before{display:none}
-@media(min-width:60.01rem){.k-hg{grid-template-columns:5fr 6fr}}
+.k-hero{padding-block:clamp(40px,6vw,72px) clamp(24px,4vw,48px);background:var(--bg)}
 .k-vis{position:relative;padding-bottom:56px}
 .k-ph{position:relative;margin:0;border-radius:32px;overflow:hidden;aspect-ratio:4/3.2;box-shadow:0 40px 90px -40px var(--sh)}
 .k-ph img{width:100%;height:100%;object-fit:cover}

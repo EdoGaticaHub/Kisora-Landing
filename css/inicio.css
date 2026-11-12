@@ -1,14 +1,13 @@
 /* Inicio (index.html). Clases k-*: no tocan legal/ ni probar.html. Tokens de landing.css, claro y oscuro. */
 .k-sec{padding-block:clamp(64px,9vw,112px)}
-.k-alt{background:var(--sf);border-block:1px solid var(--ln)}
+.k-alt{background:var(--sf)}
 .k-sec h2{max-width:22ch;margin-bottom:40px}
 .k-p{margin-top:32px;color:var(--mu2);max-width:62ch}
 
 /* hero */
-.k-hero{position:relative;padding-block:clamp(48px,8vw,96px) clamp(56px,8vw,96px);background:radial-gradient(900px 480px at 85% -10%,var(--h1),transparent),radial-gradient(640px 380px at 0 30%,var(--h2),transparent)}
-.k-hero::before{content:"";position:absolute;inset:0;background:radial-gradient(var(--ln) 1px,transparent 1px) 0 0/26px 26px;mask-image:linear-gradient(#000,transparent 75%);opacity:.5;pointer-events:none}
-.k-hg{position:relative;display:grid;grid-template-columns:6fr 6fr;gap:clamp(32px,5vw,72px);align-items:center}
-.k-hg h1{font-size:clamp(2.2rem,4.6vw,3.9rem);max-width:15ch}
+.k-hero{position:relative}
+.k-hg{position:relative;display:grid;grid-template-columns:5fr 6fr;gap:clamp(32px,5vw,72px);align-items:center}
+.k-hg h1{max-width:15ch}
 .k-hg .lead{max-width:44ch}
 .k-in{animation:k-in .7s cubic-bezier(.2,.7,.2,1) both}.k-hg>.k-in:nth-child(2){animation-delay:.12s}
 @keyframes k-in{from{opacity:0;transform:translateY(14px)}}
@@ -69,16 +68,13 @@ html:not(.js) .k-panel+.k-panel{border-top:1px solid var(--ln);margin-top:24px;p
 .k-fns{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 
 /* terreno */
-.k-terr{padding-block:clamp(48px,7vw,88px)}
-.k-tira{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:16px;height:clamp(200px,28vw,340px)}
-.k-tira .foto{height:100%}.k-tira .foto::after{display:none}.k-tira .foto img{filter:none;transition:transform .5s}.k-tira .foto:hover img{transform:scale(1.03)}
 .k-big{margin-top:32px;font-size:clamp(2.4rem,8vw,6.5rem);font-weight:800;letter-spacing:-.04em;line-height:1;display:flex;flex-wrap:wrap;gap:.2em .35em}
 .k-big span:nth-child(2){color:var(--ac)}.k-big span:nth-child(3){color:var(--mu)}
 
 /* prueba y precio */
 .k-pr{display:grid;grid-template-columns:7fr 5fr;gap:clamp(32px,5vw,72px);align-items:start}
 .k-pr h2{max-width:16ch}
-.k-reg{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.k-reg{list-style:none;margin:0;padding:0;display:grid}
 .k-reg li{display:grid;grid-template-columns:110px 1fr;gap:16px;align-items:baseline;padding:18px 0;border-top:1px solid var(--ln)}
 .k-reg li:last-child{border-bottom:1px solid var(--ln)}
 .k-reg .dia{font-size:1.5rem}.k-reg p{margin:0;color:var(--mu2)}
@@ -94,20 +90,18 @@ html:not(.js) .k-panel+.k-panel{border-top:1px solid var(--ln);margin-top:24px;p
 /* botones: pulsar */
 .btn:active{transform:translateY(0) scale(.98)}
 .btn.p:hover{box-shadow:0 12px 32px -8px var(--gs)}
-.k-hg .acc,.cta .acc{margin-top:28px}
 .nota a,.pie a{text-underline-offset:3px}
 
 @media(max-width:60rem){
  .k-hg,.k-panel,.k-mv,.k-pr,.k-faq{grid-template-columns:1fr}
  .k-flujo{grid-template-columns:1fr;gap:20px}.k-flujo::before,.k-flujo::after{display:none}
  .k-flujo a{display:grid;grid-template-columns:48px 1fr;column-gap:16px}.k-nd{grid-row:span 2;margin:0}
- .k-mod,.k-fns{grid-template-columns:1fr 1fr}.k-tira{grid-template-columns:1fr;height:auto}.k-tira .foto{height:200px}
+ .k-mod,.k-fns{grid-template-columns:1fr 1fr}
  .k-tel:nth-child(2){margin-top:0}
- .k-hg>.k-app{order:2}
 }
 @media(max-width:36rem){
  .k-mod,.k-fns{grid-template-columns:1fr}.k-tels{grid-template-columns:1fr 1fr}.k-tel:nth-child(3){display:none}
  .k-hg .acc .btn,.cta .acc .btn,.k-precio .acc .btn{width:100%;justify-content:center}
  .k-reg li{grid-template-columns:90px 1fr}
 }
-@media(prefers-reduced-motion:reduce){.k-in{animation:none}.k-flujo::after{animation:none;display:none}.k-lista li:hover,.k-panel .win:hover,.k-tel:hover img,.k-mod>div:hover,.k-flujo a:hover,.btn:active{transform:none}.k-tira .foto:hover img{transform:none}}
+@media(prefers-reduced-motion:reduce){.k-in{animation:none}.k-flujo::after{display:none}.k-lista li:hover,.k-panel .win:hover,.k-tel:hover img,.k-mod>div:hover,.k-flujo a:hover,.btn:active{transform:none}}
