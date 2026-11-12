@@ -1,0 +1,22 @@
+/* Variante C: carbón y amarillo con fotografía de obra al frente. Se apoya en nuevo.css + paleta-b.css. */
+.k-hero{background:var(--bg)}
+.k-hero::before{display:none}
+@media(min-width:60.01rem){.k-hg{grid-template-columns:5fr 6fr}}
+.k-vis{position:relative;padding-bottom:56px}
+.k-ph{margin:0;border-radius:32px;overflow:hidden;aspect-ratio:4/3.2;box-shadow:0 40px 90px -40px var(--sh)}
+.k-ph img{width:100%;height:100%;object-fit:cover}
+.k-vis .k-app{position:absolute;left:-48px;bottom:0;width:min(420px,86%);box-shadow:0 30px 70px -20px #000a}
+.k-vis .k-lista li:nth-child(n+3){display:none}
+.k-vis .k-chips{display:none}
+.k-hz{height:16px;background:repeating-linear-gradient(-45deg,var(--g) 0 20px,#1F2933 20px 40px)}
+.k-hg h1{font-size:clamp(2.4rem,5vw,4.4rem)}
+/* banda fotográfica */
+.k-band{position:relative;padding:0;overflow:hidden;min-height:clamp(360px,48vw,560px);display:flex;align-items:flex-end}
+.k-band img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.k-band::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#161B1F33,#161B1Fee)}
+.k-band .c{position:relative;z-index:2;padding-block:48px}
+.k-band .k-big{margin:0;color:#fff}
+.k-band .k-big span:nth-child(2){color:var(--g)}.k-band .k-big span:nth-child(3){color:#fff}
+.k-band .k-sub{margin-top:16px;color:#E4ECE8;max-width:46ch;font-size:1.1rem}
+@media(max-width:60rem){.k-vis{padding-bottom:0}.k-vis .k-app{position:relative;left:0;width:auto;margin:-48px 12px 0}.k-hg>.k-vis{order:2}}
+.k-hg>*,.k-vis{min-width:0}
