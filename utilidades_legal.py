@@ -14,7 +14,7 @@ def slug(t):
     return re.sub(r"[^a-z0-9]+", "-", t).strip("-")
 
 PLANTILLA = """<!DOCTYPE html>
-<html lang="es-CL">
+<html lang="es-CL" data-def="claro">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,6 +23,8 @@ PLANTILLA = """<!DOCTYPE html>
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; connect-src 'self' https://alta.kisora.cl; object-src 'none'; base-uri 'self'; form-action 'self'">
 <link rel="icon" href="/img/logo.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/css/landing.css">
+<link rel="stylesheet" href="/css/nuevo.css">
+<link rel="stylesheet" href="/css/paleta.css">
 <script src="/js/tema.js"></script>
 </head>
 <body>
