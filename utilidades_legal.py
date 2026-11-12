@@ -6,7 +6,7 @@ import markdown
 RAIZ = Path(__file__).resolve().parent
 FECHA = "8 de noviembre de 2026"
 DOCS = {"licencia": "Licencia de uso", "terminos": "Términos de servicio", "privacidad": "Política de privacidad"}
-NOMBRES = {"licencia": "Contrato de licencia de uso", **{k: v for k, v in DOCS.items() if k != "licencia"}}
+NOMBRES = {**DOCS, "licencia": "Contrato de licencia de uso"}
 
 def slug(t):
     t = re.sub(r"^\d+\.\s*", "", t)
@@ -59,7 +59,7 @@ for k in DOCS:
         t = re.match(r"<h2>(.*?)</h2>", p).group(1)
         i = slug(t); assert i not in vistos, i; vistos.add(i)
         toc.append(f'<li><a href="#{i}">{re.sub(r"^\d+\.\s*", "", t)}</a></li>')
-        cuerpo += f'<section id="{i}">\n{p.replace("<h2>", f"<h2>", 1)}</section>\n'
+        cuerpo += f'<section id="{i}">\n{p}</section>\n'
     cruce = "".join(f'<li><a href="/legal/{o}.html">{DOCS[o]}</a></li>' for o in DOCS if o != k)
     (RAIZ / "legal" / f"{k}.html").write_text(PLANTILLA.format(nombre=NOMBRES[k], titulo=titulo, fecha=FECHA, toc="".join(toc), cuerpo=cuerpo, cruce=cruce), encoding="utf-8")
     print("ok", k, len(toc))
