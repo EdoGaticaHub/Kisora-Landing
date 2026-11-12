@@ -1,6 +1,6 @@
 (function () {
   var d = document.documentElement, K = "kisora-tema";
-  function sistema() { return matchMedia("(prefers-color-scheme: light)").matches ? "claro" : "oscuro"; }
+  function sistema() { return d.dataset.def || (matchMedia("(prefers-color-scheme: light)").matches ? "claro" : "oscuro"); }
   function leer() { try { var t = localStorage.getItem(K); return t === "claro" || t === "oscuro" ? t : sistema(); } catch (e) { return sistema(); } }
   function poner(t) {
     d.setAttribute("data-tema", t);

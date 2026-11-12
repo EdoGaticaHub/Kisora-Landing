@@ -1,0 +1,5 @@
+/* Paleta definitiva. Oscuro: carbón, amarillo de obra y verde azulado. Claro: crema, azul de marca y naranja. */
+:root{--bg:#161B1F;--sf:#1F262B;--sf2:#262F35;--ln:#36424A;--ink:#EEF2F0;--mu:#A3B0B8;--mu2:#C3CDD2;--ink2:#DDE4E1;--ac:#5FD3C6;--in:#EEF2F0;--ok:#5FD3C6;--wn:#FFC93C;--g:#FFC93C;--gt:#1F2933;--gs:#FFC93Caa;--mastbg:#161B1Fcc;--pie:#101417;--h1:#5FD3C620;--h2:#FFC93C14;--h3:#FFC93C1A;--d1:#1B2227;--d2:#161B1F;
+--hz2:#1F2933;--ov0:#161B1F33;--ov1:#161B1Fee;--bandac:#FFC93C;--tint:linear-gradient(180deg,#0000,#161B1F55)}
+:root[data-tema=claro]{--bg:#FBF8F2;--sf:#FFFFFF;--sf2:#F3EEE4;--ln:#E3DBCB;--ink:#14283D;--mu:#4F5B68;--mu2:#3C4856;--ink2:#2B3744;--ac:#1F5F99;--in:#1B3A5C;--ok:#2F7A63;--wn:#8A5A00;--g:#C2410C;--gt:#FFFFFF;--gs:#C2410Caa;--mastbg:#FBF8F2cc;--pie:#FFFFFF;--h1:#1F5F9918;--h2:#F3C98A55;--h3:#C2410C14;--d1:#F3EEE4;--d2:#FBF8F2;--sh:#14283D44;
+--hz2:#14283D;--ov0:#14283D26;--ov1:#14283Ddd;--bandac:#FF9A52;--tint:linear-gradient(135deg,#1F5F9922,#FF9A5222)}

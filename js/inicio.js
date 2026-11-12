@@ -10,7 +10,7 @@
       document.getElementById(x.getAttribute("aria-controls")).hidden = !on;
     });
     if (foco) t.focus();
-    t.scrollIntoView({ block: "nearest", inline: "nearest" });
+    if (foco !== null) t.scrollIntoView({ block: "nearest", inline: "nearest" });
   }
   tabs.forEach(function (t, i) {
     t.addEventListener("click", function () { ir(t); });
@@ -23,5 +23,5 @@
   [].forEach.call(document.querySelectorAll("[data-ir]"), function (a) {
     a.addEventListener("click", function () { var t = document.getElementById("t-" + a.getAttribute("data-ir")); if (t) ir(t); });
   });
-  ir(tabs[0]);
+  ir(tabs[0], null); // null: al cargar no mueve la página
 })();
