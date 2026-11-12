@@ -1,0 +1,28 @@
+/* Rediseño del inicio: oficina y terreno. Estructura y forma; los colores viven en paleta-a.css / paleta-b.css. */
+@font-face{font-family:"Bricolage Grotesque";font-style:normal;font-weight:200 800;font-display:swap;src:url(/fonts/BricolageGrotesque.woff2) format("woff2")}
+:root{--fd:"Bricolage Grotesque","Inter",system-ui,sans-serif;--r:20px}
+h1,h2,h3,.k-big,.cifra,.dia{font-family:var(--fd)}
+h1{font-weight:700;letter-spacing:-.035em}h2{font-weight:650}
+.btn{border-radius:999px;min-height:52px;padding:0 28px}.btn.s{min-height:44px;padding:0 18px}
+.btn.p{box-shadow:0 10px 26px -10px var(--gs)}
+.tag{display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border-radius:999px;background:var(--h1);letter-spacing:.06em;margin-bottom:20px}
+.k-alt{border-block:0}
+.k-hero::before{opacity:.35}
+.k-chip,.k-lista li,.k-lis li,.fn,.k-mod>div{border-radius:16px}
+
+/* oficina y terreno */
+.k-dos{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,3vw,32px)}
+.k-lug{position:relative;display:flex;flex-direction:column;gap:20px;padding:clamp(24px,3.5vw,40px);background:var(--sf);border:1px solid var(--ln);border-radius:28px;box-shadow:0 30px 70px -45px var(--sh)}
+.k-lug.t{background:var(--sf2)}
+.k-ico{display:grid;place-items:center;width:56px;height:56px;border-radius:18px;background:var(--g);color:var(--gt)}
+.k-ico svg{width:28px;height:28px}
+.k-lug h3{font-size:1.9rem}
+.k-lug p.k-q{color:var(--mu2);font-size:1.05rem}
+.k-lug ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.k-lug li{position:relative;padding-left:32px;color:var(--ink2)}
+.k-lug li::before{content:"";position:absolute;left:4px;top:.5em;width:12px;height:6px;border-left:2.5px solid var(--ok);border-bottom:2.5px solid var(--ok);transform:rotate(-45deg)}
+.k-lug a.k-ir{margin-top:auto;font-weight:700;color:var(--ac);text-underline-offset:4px;padding-block:12px}
+@media(max-width:60rem){.k-dos{grid-template-columns:1fr}}
+.btn,.mast nav a{white-space:nowrap}
+.mast nav{gap:18px}
+.k-hero{padding-block:clamp(40px,6vw,72px) clamp(24px,4vw,48px)}
