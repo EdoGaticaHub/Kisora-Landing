@@ -34,8 +34,10 @@
 <form id="alta" class="form" novalidate>
   <label for="correo">Correo <span class="mu">(obligatorio)</span></label>
   <input id="correo" name="correo" type="email" required autocomplete="email" aria-describedby="estado" placeholder="nombre@correo.cl">
-  <label for="nombre">Tu nombre <span class="mu">(opcional)</span></label>
-  <input id="nombre" name="nombre" type="text" autocomplete="name">
+  <label for="nombres">Nombres <span class="mu">(opcional)</span></label>
+  <input id="nombres" name="nombres" type="text" autocomplete="given-name">
+  <label for="apellidos">Apellidos <span class="mu">(opcional)</span></label>
+  <input id="apellidos" name="apellidos" type="text" autocomplete="family-name">
   <label for="empresa">Empresa u obra <span class="mu">(opcional; déjalo en blanco si trabajas por tu cuenta)</span></label>
   <input id="empresa" name="empresa" type="text" autocomplete="organization">
   <input class="trampa" name="web" type="text" tabindex="-1" autocomplete="off" aria-hidden="true">
