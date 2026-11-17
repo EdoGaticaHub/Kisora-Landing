@@ -25,3 +25,12 @@
   });
   ir(tabs[0], null); // null: al cargar no mueve la página
 })();
+
+// Menú «Ingresar»: se cierra con la cruz, al tocar fuera o con Escape.
+(function () {
+  var m = document.querySelector(".ing"); if (!m) return;
+  function cerrar() { m.removeAttribute("open"); }
+  m.querySelector(".ing-x").addEventListener("click", function () { cerrar(); m.querySelector("summary").focus(); });
+  document.addEventListener("click", function (e) { if (!m.contains(e.target)) cerrar(); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape" && m.open) { cerrar(); m.querySelector("summary").focus(); } });
+})();

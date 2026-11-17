@@ -62,3 +62,5 @@ h1{font-weight:700;letter-spacing:-.035em}h2{font-weight:650}
 .ing-c p{color:var(--mu);flex:1}
 @media(max-width:48rem){.ing-g{grid-template-columns:1fr}.ing-c .btn{width:100%;justify-content:center}}
 @media(max-width:36rem){.ing-m{position:fixed;left:16px;right:16px;top:68px;min-width:0}}
+.ing-x{position:absolute;top:6px;right:8px;width:32px;height:32px;border:0;border-radius:50%;background:transparent;color:var(--mu);font-size:1.4rem;line-height:1;cursor:pointer}.ing-x:hover{background:var(--sf2);color:var(--ink)}
+.ing-m{padding-top:36px}
