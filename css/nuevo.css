@@ -64,3 +64,9 @@ h1{font-weight:700;letter-spacing:-.035em}h2{font-weight:650}
 @media(max-width:36rem){.ing-m{position:fixed;left:16px;right:16px;top:68px;min-width:0}}
 .ing-x{position:absolute;top:6px;right:8px;width:32px;height:32px;border:0;border-radius:50%;background:transparent;color:var(--mu);font-size:1.4rem;line-height:1;cursor:pointer}.ing-x:hover{background:var(--sf2);color:var(--ink)}
 .ing-m{padding-top:36px}
+/* Menú Ingresar: dos opciones separadas, cada una con su tarjeta */
+.ing-m{display:flex;flex-direction:column;gap:10px;padding:44px 12px 12px}
+.ing-m a{border:1px solid var(--ln);background:var(--bg);padding:14px 16px;min-height:64px;justify-content:center;position:relative;padding-right:40px}
+.ing-m a::after{content:"";position:absolute;right:16px;top:50%;width:8px;height:8px;border:solid var(--ac);border-width:2px 2px 0 0;transform:translateY(-50%) rotate(45deg)}
+.ing-m a:hover,.ing-m a:focus-visible{border-color:var(--ac);background:var(--sf2)}
+.ing-m strong{font-size:1rem}.ing-m span{font-size:.85rem}
