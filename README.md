@@ -41,4 +41,4 @@ Sin frameworks ni CDN, fuentes del sistema, sin testimonios ni cifras inventadas
 
 ## Fuente única del texto legal
 
-`legal-md/` es la fuente del texto público (términos, privacidad y licencia). El repo del producto (SIGEV-VSC) solo guarda plantillas internas en `docs/legal/`; cualquier cambio al texto público se hace acá.
+`legal-md/` es la fuente del texto público (términos, privacidad y licencia). El repo del producto (Kisora-VSC) solo guarda plantillas internas en `docs/legal/`; cualquier cambio al texto público se hace acá.
