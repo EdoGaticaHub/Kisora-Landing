@@ -18,6 +18,9 @@ kisora.cl {
     @static path *.css *.js *.webp *.jpg *.png *.svg *.ico *.woff2
     header @static Cache-Control "public, max-age=86400"
     header /index.html Cache-Control "no-cache"
+    # la página de alta (alta.kisora.cl) usa estas fuentes y logos
+    @alta path /fonts/* /img/logo*
+    header @alta Access-Control-Allow-Origin "https://alta.kisora.cl"
 
     # 403 se muestra como 404 para no revelar qué existe
     handle_errors {
