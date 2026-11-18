@@ -34,3 +34,20 @@
   document.addEventListener("click", function (e) { if (!m.contains(e.target)) cerrar(); });
   document.addEventListener("keydown", function (e) { if (e.key === "Escape" && m.open) { cerrar(); m.querySelector("summary").focus(); } });
 })();
+
+// Quien ya ingresó una vez vuelve con un clic: «Ingresar» va directo a su acceso (el otro sigue en «Ingresa a tu cuenta»).
+(function () {
+  var K = "kisora_ingreso", m = document.querySelector(".ing"), v = null;
+  try { v = localStorage.getItem(K); } catch (e) {}
+  [].forEach.call(document.querySelectorAll('a[href^="https://clientes.kisora.cl/"]'), function (a) {
+    a.addEventListener("click", function () {
+      var r = a.getAttribute("href").split("/").pop();
+      if (r === "empresas" || r === "individual") try { localStorage.setItem(K, r); } catch (e) {}
+    });
+  });
+  if (!m || (v !== "empresas" && v !== "individual")) return;
+  var a = document.createElement("a");
+  a.className = "btn s"; a.href = "https://clientes.kisora.cl/" + v; a.textContent = "Ingresar";
+  a.setAttribute("aria-label", v === "empresas" ? "Ingresar a tu cuenta de empresa" : "Ingresar a tu cuenta de independiente");
+  m.replaceWith(a);
+})();

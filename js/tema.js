@@ -20,7 +20,7 @@
       try { localStorage.setItem(K, t); } catch (e) {}
       poner(t);
     });
-    c.insertBefore(b, c.querySelector(".btn"));
+    c.insertBefore(b, c.querySelector(".ing, .btn")); // hijo directo de la cabecera (el .btn del menú Ingresar no lo es)
     poner(d.getAttribute("data-tema"));
   });
 })();
