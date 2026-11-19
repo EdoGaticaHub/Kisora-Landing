@@ -28,6 +28,7 @@ Esta Política se rige por:
 - Datos de navegación: dirección IP, tipo de navegador, páginas visitadas, fecha y hora de acceso.
 - Datos del formulario de contacto: nombre, correo electrónico, empresa, mensaje.
 - Datos de la solicitud de prueba (probar.html): correo electrónico (obligatorio), y nombre y empresa u obra (opcionales).
+- Para aplicar el descuento por participar en la beta, Kisora guarda un hash del correo de la prueba (no el correo).
 - Kisora no usa cookies de terceros, publicidad ni analítica en su sitio web.
 
 ### 3.2 Datos de las cuentas de usuario
@@ -81,6 +82,7 @@ Kisora trata estos datos exclusivamente por instrucción y cuenta de la empresa 
 | Datos en modo solo lectura | 60 días adicionales tras el período de gracia |
 | Copia de archivo (cifrada) | Hasta 365 días desde la terminación, solo para disputas legales |
 | Correo de una solicitud de prueba | Hasta confirmar el enlace (vale 24 horas); si no se confirma, se elimina al vencer. Una vez confirmado, pasa a ser dato de la cuenta |
+| Hash del correo de una prueba de la beta | Hasta que se aplique el descuento o hasta que lo solicites; no permite leer el correo |
 | Datos del formulario de contacto | 12 meses desde la consulta |
 | Registros de acceso (logs) | 180 días |
 | Registro de aceptación de términos | Mientras exista la Instalación del cliente, incluyendo el período de archivo |

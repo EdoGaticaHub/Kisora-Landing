@@ -37,7 +37,9 @@ El servicio se presta bajo un modelo single-tenant: cada Cliente tiene su propia
 
 4.3. La prueba no requiere tarjeta de crédito ni compromiso de compra. Al finalizar, el Cliente puede contratar un Plan o dejar de usar el Software. Si no contrata, la Instalación pasa a modo solo lectura conforme a la cláusula 10 del Contrato de Licencia.
 
-4.4. El Proveedor puede modificar la duración de la prueba o suspenderla para nuevos registros en cualquier momento.
+4.4. **Descuento por participar:** quien cree una prueba mientras Kisora esté en beta tendrá un descuento sobre el plan que contrate cuando el producto salga a la venta, siempre que lo contrate con el mismo correo electrónico con el que creó la prueba. El monto y las condiciones se informarán al abrir la venta. Quien active un plan mientras su Instalación exista conserva sus datos.
+
+4.5. El Proveedor puede modificar la duración de la prueba o suspenderla para nuevos registros en cualquier momento.
 
 ## 5. Planes y contratación
 

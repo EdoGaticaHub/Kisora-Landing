@@ -70,3 +70,24 @@ h1{font-weight:700;letter-spacing:-.035em}h2{font-weight:650}
 .ing-m a::after{content:"";position:absolute;right:16px;top:50%;width:8px;height:8px;border:solid var(--ac);border-width:2px 2px 0 0;transform:translateY(-50%) rotate(45deg)}
 .ing-m a:hover,.ing-m a:focus-visible{border-color:var(--ac);background:var(--sf2)}
 .ing-m strong{font-size:1rem}.ing-m span{font-size:.85rem}
+
+/* cargar datos, planes y guías paso a paso */
+.g-intro h1{font-size:clamp(2.2rem,5vw,3.6rem);max-width:18ch}
+.g-pasos{list-style:none;margin:40px 0 0;padding:0}
+.g-paso{display:grid;grid-template-columns:5fr 7fr;gap:clamp(20px,4vw,48px);align-items:center;padding-block:32px;border-top:1px solid var(--ln)}
+.g-paso:last-child{border-bottom:1px solid var(--ln)}
+.g-paso>*{min-width:0}
+.g-txt h3{font-size:1.4rem;margin-bottom:10px}
+.g-txt p,.g-txt li{color:var(--mu2)}
+.g-txt ul{margin:0 0 12px;padding-left:20px;display:grid;gap:8px}
+.g-nota p{margin:0 0 8px}
+.g-sub{font-size:1.5rem;margin-top:56px}
+.g-tipos{margin-top:24px}
+.g-fin{margin-top:32px}
+@media(max-width:60rem){.g-paso{grid-template-columns:1fr}}
+.g-tabla{overflow-x:auto;margin-top:16px}
+.g-tabla table{width:100%;border-collapse:collapse;font-size:.95rem}
+.g-tabla th,.g-tabla td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--ln);vertical-align:top}
+.g-tabla th{color:var(--mu);font-weight:600}
+.g-tipos .k-m a{display:inline-block;margin-top:12px;padding-block:10px;font-weight:700;color:var(--ac);text-underline-offset:4px}
+.k-p+.k-mod{margin-top:32px}
