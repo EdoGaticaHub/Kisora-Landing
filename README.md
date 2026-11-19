@@ -12,7 +12,7 @@ Abrir http://localhost:8080 (las rutas son absolutas desde la raíz).
 
 ## Publicar
 
-kisora.cl se publica con GitHub Pages: cada push a `main` ejecuta `.github/workflows/pages.yml`, que copia `index.html`, `probar.html`, `404.html`, `error.html`, `css`, `js`, `legal`, `img`, `robots.txt` y `sitemap.xml` a `_site`. Una sola vez: Settings > Pages > Source: GitHub Actions; luego Custom domain: kisora.cl y Enforce HTTPS.
+kisora.cl se publica con GitHub Pages: cada push a `main` ejecuta `.github/workflows/pages.yml`, que copia `index.html`, `probar.html`, `404.html`, `error.html`, `css`, `js`, `guias`, `legal`, `img`, `robots.txt` y `sitemap.xml` a `_site`. Una sola vez: Settings > Pages > Source: GitHub Actions; luego Custom domain: kisora.cl y Enforce HTTPS.
 
 DNS de kisora.cl: registros A a 185.199.108.153, 185.199.109.153, 185.199.110.153 y 185.199.111.153; www como CNAME a edogaticahub.github.io.
 
@@ -24,16 +24,17 @@ DNS de kisora.cl: registros A a 185.199.108.153, 185.199.109.153, 185.199.110.15
 
 ## Plazos
 
-14 días de prueba, 30 de gracia y 60 de solo lectura (`app/licencia.py`, plan básico). En el plan `beta` la prueba pasa directo a solo lectura por 30 días, sin gracia.
+14 días de prueba, 30 de gracia y 60 de solo lectura (`app/licencia.py`, plan básico). En el plan `beta` la prueba pasa directo a solo lectura por 30 días, sin gracia, y luego se elimina. La sección «Prueba» y la FAQ muestran el camino beta (el que reciben hoy las pruebas de `probar.html`) y, aparte, el del plan contratado.
 
 ## Antes de anunciar (pendientes)
 
 - [ ] Buzón de contacto: hoy `legal/` y `probar.html` usan `kisora.contacto@zohomail.com`; migrar a `contacto@kisora.cl` cuando exista (cambiar en `utilidades_legal.py` y `probar.html`).
 - [ ] Revisión de abogado de `legal/` (publicado, pero sin revisar por abogado).
-- [ ] Precio: la sección dice «Cotiza en 24 h». Cambiar cuando haya valores en UF.
+- [ ] Planes: la sección «Planes» (Estándar y Premium) no tiene valores; sin cotización por correo. Publicar los valores en UF al abrir la venta. Premium = planos editables: el producto aún no ata `planos_editar` al plan (hoy es permiso por cargo) ni cobra solo (falta F6).
+- [ ] «Servidores: Oracle Cloud, Santiago» y «Meta de 99 %» salen de `legal-md/`; confirmar que siguen siendo ciertos.
 - [ ] Si se cambian los días de prueba, hay que cambiarlos en `index.html` (hero, prueba, FAQ, CTA) y `legal/terminos.html`, y en `app/licencia.py` del producto (ver «Plazos»).
 - [ ] El formulario de `probar.html` depende de `https://alta.kisora.cl/api/alta`; verificar que esté en línea (y con CORS para kisora.cl) antes de anunciar.
-- [ ] Imágenes: `img/app-*.webp` y `img/movil-*.webp` son capturas reales de la app con la base demo; fotos de obra (`img/*.webp`) son de Pexels y Unsplash (licencia gratuita). Al tener fotos propias, reemplazar `hero-claro` y `hero-oscuro` (1600×1067 y 800 de ancho) para mantener el diseño. Reemplazar por capturas reales cuando se quiera.
+- [ ] Imágenes: `img/app-*.webp` y `img/movil-*.webp` son capturas reales de la app con la base demo; fotos de obra (`img/*.webp`) son de Pexels y Unsplash (licencia gratuita). Al tener fotos propias, reemplazar `hero-claro` y `hero-oscuro` (1600×1067 y 800 de ancho) para mantener el diseño. Reemplazar por capturas reales cuando se quiera. `img/guia-*.webp` (guías paso a paso) son capturas reales de la app con la base demo (`utilidades/demo.py`).
 
 ## Reglas
 
