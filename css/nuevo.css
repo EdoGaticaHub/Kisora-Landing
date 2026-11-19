@@ -91,3 +91,6 @@ h1{font-weight:700;letter-spacing:-.035em}h2{font-weight:650}
 .g-tabla th{color:var(--mu);font-weight:600}
 .g-tipos .k-m a{display:inline-block;margin-top:12px;padding-block:10px;font-weight:700;color:var(--ac);text-underline-offset:4px}
 .k-p+.k-mod{margin-top:32px}
+/* aviso de beta: franja chica bajo la cabecera, sin fijarse ni tapar nada */
+.aviso-beta{display:flex;align-items:center;justify-content:center;gap:10px;padding:6px 16px;font-size:.85rem;line-height:1.35;color:var(--ink);background:var(--sf2);border-bottom:1px solid var(--ln)}
+.aviso-tag{flex:none;padding:2px 9px;border-radius:999px;background:var(--g);color:var(--gt);font:700 .7rem/1.4 var(--m);letter-spacing:.1em;text-transform:uppercase}

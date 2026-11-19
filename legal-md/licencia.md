@@ -110,7 +110,7 @@ La infracción de cualquiera de estas restricciones constituye incumplimiento gr
 
 9.1. **Período inicial:** La licencia tiene una vigencia de 12 meses contados desde la fecha de activación de la Instalación.
 
-9.2. **Período de prueba:** El Cliente puede acceder a una prueba gratuita del Software por el período que se indique en kisora.cl (actualmente 14 días), sin necesidad de tarjeta de crédito. Durante la prueba, se aplican todas las cláusulas de este Contrato excepto las de pago. Al finalizar la prueba, el Cliente puede contratar la suscripción o dejar de usar el Software. Los datos ingresados durante la prueba se conservan conforme a la cláusula 10.
+9.2. **Período de prueba:** El Cliente puede acceder a una prueba gratuita del Software por el período que se indique en kisora.cl (actualmente 30 días, mientras Kisora esté en beta), sin necesidad de tarjeta de crédito. Durante la prueba, se aplican todas las cláusulas de este Contrato excepto las de pago. Al finalizar la prueba, el Cliente puede contratar la suscripción o dejar de usar el Software. Los datos ingresados durante la prueba se conservan conforme a la cláusula 10.
 
 9.3. **Renovación:** La licencia se renueva automáticamente por períodos sucesivos de 12 meses, salvo que cualquiera de las partes notifique su intención de no renovar con al menos 30 días de anticipación antes del vencimiento del período en curso.
 

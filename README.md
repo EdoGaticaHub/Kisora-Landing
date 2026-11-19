@@ -24,15 +24,15 @@ DNS de kisora.cl: registros A a 185.199.108.153, 185.199.109.153, 185.199.110.15
 
 ## Plazos
 
-14 días de prueba, 30 de gracia y 60 de solo lectura (`app/licencia.py`, plan básico). El plan `beta` tiene los mismos plazos (14 + 30 + 60, `app/licencia.py`, correos y Términos); luego se archiva y se elimina. Quien active un plan antes de eso conserva sus datos (`activar_cliente.py`).
+Plan `beta` (el de hoy): 30 días de prueba, 30 de gracia y 60 de solo lectura (`DIAS_PRUEBA` en `app/licencia.py` del producto, correos y Términos); luego se archiva y se elimina. Los 30 días rigen mientras el dueño no dé el visto bueno de lanzamiento (decisión 19-11-2026); al lanzar, manda el plan básico: 14 días de prueba, con la misma gracia y solo lectura. Quien active un plan antes de eso conserva sus datos (`activar_cliente.py`).
 
 ## Antes de anunciar (pendientes)
 
 - [ ] Buzón de contacto: hoy `legal/` y `probar.html` usan `kisora.contacto@zohomail.com`; migrar a `contacto@kisora.cl` cuando exista (cambiar en `utilidades_legal.py` y `probar.html`).
 - [ ] Revisión de abogado de `legal/` (publicado, pero sin revisar por abogado).
-- [ ] Planes: la sección dice que se publican cuando el programa esté completo (sin precios ni diferencias entre planes; decisión 19-11-2026). Al abrir la venta, publicar planes y valores en UF y el monto del descuento beta. La activación automática existe (`utilidades/activar_cliente.py` en Kisora-VSC); falta la pasarela de pago, aún sin elegir.
+- [ ] Planes y pago: la landing no los muestra mientras sea beta (sección «Planes» retirada, decisión 19-11-2026; se mantiene el descuento por participar). Al abrir la venta, publicar planes y valores en UF y el monto del descuento beta. La activación automática existe (`utilidades/activar_cliente.py` en Kisora-VSC); falta la pasarela de pago, aún sin elegir.
 - [ ] «Servidores: Oracle Cloud, Santiago» y «Meta de 99 %» salen de `legal-md/`; confirmar que siguen siendo ciertos.
-- [ ] Si se cambian los días de prueba, hay que cambiarlos en `index.html` (hero, prueba, FAQ, CTA) y `legal/terminos.html`, y en `app/licencia.py` del producto (ver «Plazos»).
+- [ ] Si se cambian los días de prueba, hay que cambiarlos en `index.html` (hero, ingreso, prueba, FAQ), `probar.html`, `guias/index.html`, `legal-md/terminos.md` y `legal-md/licencia.md` (luego `python3 utilidades_legal.py`), y en `DIAS_PRUEBA` de `app/licencia.py` del producto (ver «Plazos»). Al lanzar, quitar también el aviso «Kisora está en beta» (`.aviso-beta`).
 - [ ] El formulario de `probar.html` depende de `https://alta.kisora.cl/api/alta`; verificar que esté en línea (y con CORS para kisora.cl) antes de anunciar.
 - [ ] Imágenes: `img/app-*.webp` y `img/movil-*.webp` son capturas reales de la app con la base demo; fotos de obra (`img/*.webp`) son de Pexels y Unsplash (licencia gratuita). Al tener fotos propias, reemplazar `hero-claro` y `hero-oscuro` (1600×1067 y 800 de ancho) para mantener el diseño. Reemplazar por capturas reales cuando se quiera. `img/guia-*.webp` (guías paso a paso) son capturas reales de la app con la base demo (`utilidades/demo.py`).
 
