@@ -30,7 +30,7 @@
 <header class="mast">
   <div class="c">
     <a class="marca" href="/" aria-label="Kisora, inicio"><img class="solo-osc" src="/img/logo-horizontal-reverso.svg" width="112" height="30" alt="Kisora"><img class="solo-cla" src="/img/logo-horizontal.svg" width="112" height="30" alt=""></a>
-    <nav aria-label="Guías"><a href="#carga">Cargar desde Excel</a><a href="#obra">Tu primera obra</a></nav>
+    <nav aria-label="Guías"><a href="#carga">Cargar desde Excel</a><a href="#archivos">Cómo lee tus archivos</a><a href="#obra">Tu primera obra</a></nav>
     <a class="btn s" href="/">Volver al inicio</a>
     <a class="btn p s" href="/probar.html">Probar gratis</a>
   </div>
@@ -42,9 +42,10 @@
   <div class="c">
     <span class="tag">Guías</span>
     <h1>Kisora, paso a paso</h1>
-    <p class="lead">Dos guías cortas, con capturas reales de la plataforma y datos de demostración. Disponibles a cualquier hora. Si quieres verlo con tus propios datos, creas tu prueba de 14 días sin tarjeta.</p>
+    <p class="lead">Tres guías con capturas reales de la plataforma y datos de demostración. Disponibles a cualquier hora. Si quieres verlo con tus propios datos, creas tu prueba de 14 días sin tarjeta.</p>
     <div class="acc">
       <a class="btn p" href="#carga">Cargar desde Excel</a>
+      <a class="btn" href="#archivos">Cómo lee tus archivos</a>
       <a class="btn" href="#obra">Probar con una obra</a>
     </div>
   </div>
@@ -91,13 +92,127 @@
       <div class="k-m"><h3>Carta Gantt</h3><p>En el plan de cada obra: MS Project (XML), GanttProject, Excel o CSV.</p></div>
       <div class="k-m"><h3>Stock inicial</h3><p>Se anota con el conteo de bodega, material por material (<em>Conté lo que hay</em>). Hoy no se carga desde Excel.</p></div>
     </div>
-    <p class="nota">¿Te trabas en la carga? Escríbenos: soporte por correo, en horario laboral de Chile.</p>
+    <p class="nota">Más casos (archivos incompletos, encabezados propios, valores que Kisora pregunta) en la <a href="#archivos">guía 2</a>. ¿Te trabas en la carga? Escríbenos: soporte por correo, en horario laboral de Chile.</p>
   </div>
 </section>
 
-<section id="obra" class="k-sec">
+<section id="archivos" class="k-sec">
   <div class="c">
     <span class="tag">Guía 2</span>
+    <h2>Cómo lee Kisora tus archivos</h2>
+    <p class="k-p">Kisora mira lo que hay adentro del archivo, no su nombre. Te dice qué cree que es, cuántas filas cargaría y cuántas quedan por resolver, y no carga nada hasta que confirmes. Los seis archivos de ejemplo de abajo tienen datos inventados: bájalos, pruébalos en tu prueba gratuita y compara con las capturas. En cada captura, los números rojos marcan dónde hacer clic o qué mirar.</p>
+
+    <h3 class="g-sub">Qué archivos acepta</h3>
+    <div class="g-tabla"><table>
+      <thead><tr><th>Qué subes</th><th>Formato</th><th>Dónde se sube</th></tr></thead>
+      <tbody>
+        <tr><td>Plantilla de carga</td><td>Excel (.xlsx)</td><td>Ajustes › Datos › Plantilla de carga</td></tr>
+        <tr><td>Nómina de trabajadores</td><td>Excel (.xlsx)</td><td>Personal</td></tr>
+        <tr><td>Listado de herramientas</td><td>Excel (.xlsx)</td><td>Compras y bodega › Bodega › Catálogo</td></tr>
+        <tr><td>Facturas de proveedores</td><td>Excel (.xlsx)</td><td>Pagos</td></tr>
+        <tr><td>Presupuestos de vivienda</td><td>Excel (.xlsx), una hoja por vivienda</td><td>Proyectos</td></tr>
+        <tr><td>Carta Gantt</td><td>Excel, CSV, o XML de MS Project o GanttProject</td><td>Proyectos, en el plan de la obra</td></tr>
+        <tr><td>Planos</td><td>PDF, DWG, PNG o JPG</td><td>Proyectos</td></tr>
+      </tbody>
+    </table></div>
+    <p class="nota">Planillas de hasta 10 MB y planos de hasta 25 MB. Un Excel antiguo (.xls) no se lee: guárdalo como .xlsx.</p>
+
+    <h3 class="g-sub">Los archivos de ejemplo</h3>
+    <div class="k-mod g-tipos">
+      <div class="k-m"><h3>Plantilla completa</h3><p>Las cuatro hojas llenas: se carga todo.</p><a href="/guias/ejemplos/plantilla-completa.xlsx" download>Bajar plantilla-completa.xlsx</a></div>
+      <div class="k-m"><h3>Plantilla incompleta</h3><p>Le faltan datos a propósito: un RUT, una unidad, un nombre.</p><a href="/guias/ejemplos/plantilla-incompleta.xlsx" download>Bajar plantilla-incompleta.xlsx</a></div>
+      <div class="k-m"><h3>Nómina con encabezados propios</h3><p>«R.U.T.», «Fec. nacimiento» y columnas que Kisora no usa.</p><a href="/guias/ejemplos/nomina-propia.xlsx" download>Bajar nomina-propia.xlsx</a></div>
+      <div class="k-m"><h3>Herramientas</h3><p>Con un valor que no dice si es por unidad o total.</p><a href="/guias/ejemplos/herramientas.xlsx" download>Bajar herramientas.xlsx</a></div>
+      <div class="k-m"><h3>Facturas de proveedores</h3><p>Ordenado: Kisora lo lee solo.</p><a href="/guias/ejemplos/facturas-proveedores.xlsx" download>Bajar facturas-proveedores.xlsx</a></div>
+      <div class="k-m"><h3>Un archivo que no es de Kisora</h3><p>Una lista de invitados, para ver qué pasa.</p><a href="/guias/ejemplos/archivo-desconocido.xlsx" download>Bajar archivo-desconocido.xlsx</a></div>
+    </div>
+
+    <h3 class="g-sub">Caso 1 · Archivo completo: se carga todo</h3>
+    <p class="k-p">Con <strong>plantilla-completa.xlsx</strong> (6 materiales, 3 proveedores, 2 proyectos y 3 trabajadores, todos sus datos).</p>
+    <ol class="g-pasos">
+      <li class="g-paso">
+        <div class="g-txt"><span class="k-nd">1</span><h3>Sube la plantilla</h3><p>En <strong>Ajustes › Datos › Plantilla de carga</strong>: (1) <strong>Bajar la plantilla</strong> si aún no la tienes, (2) elige tu archivo y (3) <strong>Subir y cargar</strong>.</p></div>
+        <div class="win"><img src="/img/g2-completa-1.webp" width="1440" height="900" loading="lazy" alt="Ajustes, Plantilla de carga, con el archivo plantilla-completa.xlsx elegido y los botones numerados"></div>
+      </li>
+      <li class="g-paso">
+        <div class="g-txt"><span class="k-nd">2</span><h3>Revisa el resumen</h3><p>(4) Kisora dice qué cargó: 6 materiales, 3 proveedores, 2 proyectos y 3 trabajadores, y <strong>0 por resolver</strong>. No quedó nada pendiente.</p></div>
+        <div class="win"><img src="/img/g2-completa-2.webp" width="1440" height="900" loading="lazy" alt="Resumen de la carga: todo cargado, cero filas por resolver"></div>
+      </li>
+    </ol>
+    <h3 class="g-sub">Caso 2 · Archivo incompleto: carga lo bueno y te deja lo dudoso</h3>
+    <p class="k-p">Con <strong>plantilla-incompleta.xlsx</strong>: un código repetido, un material sin unidad, un RUT con dígito verificador malo, un proveedor sin RUT, un proyecto sin nombre y un trabajador sin RUN.</p>
+    <ol class="g-pasos">
+      <li class="g-paso">
+        <div class="g-txt"><span class="k-nd">1</span><h3>Súbela igual</h3><p>Mismos pasos. Kisora carga lo que está bien (2 materiales, 1 proveedor, 1 proyecto y 1 trabajador) y deja <strong>6 filas por resolver</strong>. Nada se pierde ni se descarta solo.</p></div>
+        <div class="win"><img src="/img/g2-incompleta-1.webp" width="1440" height="900" loading="lazy" alt="Resumen de la carga con filas cargadas y filas por resolver"></div>
+      </li>
+      <li class="g-paso">
+        <div class="g-txt"><span class="k-nd">2</span><h3>Completa el dato</h3><p>Cada pendiente aparece en <strong>Por resolver</strong>, en la pantalla de ese dato. Aquí, Compras y bodega › Proveedores: (1) corrige el RUT, (2) <strong>Cargar corregido</strong>, o (3) <strong>Descartar</strong> la fila si no la quieres.</p></div>
+        <div class="win"><img src="/img/g2-incompleta-2.webp" width="1440" height="900" loading="lazy" alt="Proveedores, lista Por resolver con un RUT inválido, el campo RUT y los botones Cargar corregido y Descartar marcados"></div>
+      </li>
+      <li class="g-paso">
+        <div class="g-txt"><span class="k-nd">3</span><h3>Queda en la lista</h3><p>El proveedor corregido ya aparece entre tus proveedores. Lo mismo vale para materiales, proyectos y trabajadores.</p></div>
+        <div class="win"><img src="/img/g2-incompleta-3.webp" width="1440" height="900" loading="lazy" alt="Lista de proveedores con Áridos del Sur SpA ya cargado"></div>
+      </li>
+      <li class="g-paso">
+        <div class="g-txt"><span class="k-nd">4</span><h3>Falta una unidad</h3><p>En <strong>Compras y bodega › Bodega › Catálogo</strong>: (1) escribe la unidad y (2) <strong>Cargar corregido</strong>. Si el código ya existe, Kisora muestra «Se parece a…» para que decidas si lo corriges o lo descartas.</p></div>
+        <div class="win"><img src="/img/g2-incompleta-4.webp" width="1440" height="900" loading="lazy" alt="Catálogo, Por resolver con un material sin unidad, el campo Unidad y el botón Cargar corregido marcados"></div>
+      </li>
+    </ol>
+    <h3 class="g-sub">Caso 3 · Encabezados propios: Kisora pregunta qué columna es cuál</h3>
+    <p class="k-p">Con <strong>nomina-propia.xlsx</strong>: encabezados «N°», «Nombre completo», «R.U.T.», «Fec. nacimiento», «Sueldo base», «Fono», «Cargo» y «AFP». Una fila sin RUN, otra con RUN inválido y una fecha imposible (31-02-1992).</p>
+    <ol class="g-pasos">
+      <li class="g-paso">
+        <div class="g-txt"><span class="k-nd">1</span><h3>Sube la nómina</h3><p>En <strong>Personal</strong>, (1) toca <strong>Subir nómina</strong> y elige el archivo.</p></div>
+        <div class="win"><img src="/img/g2-propia-1.webp" width="1440" height="900" loading="lazy" alt="Personal con el botón Subir nómina marcado"></div>
+      </li>
+      <li class="g-paso">
+        <div class="g-txt"><span class="k-nd">2</span><h3>Kisora no está seguro</h3><p>Reconoce una <strong>nómina de trabajadores</strong>, pero con <strong>confianza baja</strong> (1): no entendió «R.U.T.» como RUN. Te pide indicar cuál es cuál: la (2) Columna C.</p></div>
+        <div class="win"><img src="/img/g2-propia-2.webp" width="1440" height="900" loading="lazy" alt="Panel Subir nómina con confianza baja y la columna R.U.T. sin asignar"></div>
+      </li>
+      <li class="g-paso">
+        <div class="g-txt"><span class="k-nd">3</span><h3>Elige la columna</h3><p>Al marcar esa columna como <strong>RUN</strong> (4), Kisora recalcula: (3) 4 filas, 2 por cargar y 2 por resolver. Toca (5) <strong>Cargar nómina</strong>. Lo que corrijas queda recordado para el próximo archivo. «AFP» se guarda como observación; «Cargo», que Kisora no usa, queda fuera.</p></div>
+        <div class="win"><img src="/img/g2-propia-3.webp" width="1440" height="900" loading="lazy" alt="Panel con la columna R.U.T. asignada a RUN, el resumen de filas y el botón Cargar nómina"></div>
+      </li>
+      <li class="g-paso">
+        <div class="g-txt"><span class="k-nd">4</span><h3>Completa lo que falta</h3><p>La fila sin RUN y la de RUN inválido quedan en <strong>Por resolver</strong>, al final de Personal: (1) escribe el RUN, (2) <strong>Cargar corregido</strong> o (3) <strong>Descartar</strong>. La fecha imposible no se carga: ese campo queda vacío para que lo completes.</p></div>
+        <div class="win"><img src="/img/g2-propia-4.webp" width="1440" height="900" loading="lazy" alt="Personal, Por resolver con un trabajador sin RUN y los botones marcados"></div>
+      </li>
+    </ol>
+    <h3 class="g-sub">Caso 4 · Falta una decisión: ¿el valor es por unidad o total?</h3>
+    <p class="k-p">Con <strong>herramientas.xlsx</strong>: tres herramientas con cantidad y una columna «Valor».</p>
+    <ol class="g-pasos">
+      <li class="g-paso">
+        <div class="g-txt"><span class="k-nd">1</span><h3>Kisora pregunta</h3><p>En <strong>Compras y bodega › Bodega › Catálogo › Subir herramientas</strong> reconoce un listado de herramientas con <strong>confianza alta</strong> (1), pero hay cantidades mayores a 1 y no sabe si el valor es por unidad o total. Sin elegir, esas filas quedan por resolver (2). Elige en (3).</p></div>
+        <div class="win"><img src="/img/g2-herram-1.webp" width="1440" height="900" loading="lazy" alt="Panel Subir herramientas con confianza alta, el resumen de filas y el selector El valor es"></div>
+      </li>
+      <li class="g-paso">
+        <div class="g-txt"><span class="k-nd">2</span><h3>Elige y carga</h3><p>Con la respuesta, las 3 filas quedan por cargar (4). Toca (5) <strong>Cargar herramientas</strong>: Kisora crea una ficha por cada unidad.</p></div>
+        <div class="win"><img src="/img/g2-herram-2.webp" width="1440" height="900" loading="lazy" alt="Panel con las tres herramientas listas y el botón Cargar herramientas marcado"></div>
+      </li>
+    </ol>
+    <h3 class="g-sub">Caso 5 · Archivo ordenado: se lee solo</h3>
+    <p class="k-p">Con <strong>facturas-proveedores.xlsx</strong>: proveedor, N° de factura, monto, fechas y orden de compra.</p>
+    <ol class="g-pasos">
+      <li class="g-paso">
+        <div class="g-txt"><span class="k-nd">1</span><h3>Súbelo en Pagos</h3><p>En <strong>Pagos › Subir facturas</strong> reconoce unas <strong>facturas de proveedores</strong> con confianza alta (1) y no pregunta nada: 3 filas, 3 por cargar (2). Toca <strong>Cargar facturas</strong>.</p></div>
+        <div class="win"><img src="/img/g2-facturas.webp" width="1440" height="900" loading="lazy" alt="Panel Subir facturas con confianza alta y tres filas por cargar"></div>
+      </li>
+    </ol>
+    <h3 class="g-sub">Caso 6 · Un archivo que no es de Kisora</h3>
+    <p class="k-p">Con <strong>archivo-desconocido.xlsx</strong>: una lista de invitados.</p>
+    <ol class="g-pasos">
+      <li class="g-paso">
+        <div class="g-txt"><span class="k-nd">1</span><h3>No se hace nada</h3><p>Kisora dice que el tipo es <strong>desconocido</strong> (1) y que <strong>no se hace nada con este archivo</strong> (2). Si sabes qué es, puedes elegir el tipo en «Elige qué es este archivo».</p></div>
+        <div class="win"><img src="/img/g2-desconocido.webp" width="1440" height="900" loading="lazy" alt="Panel Subir nómina con tipo desconocido y el aviso de que no se hace nada"></div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section id="obra" class="k-sec k-alt">
+  <div class="c">
+    <span class="tag">Guía 3</span>
     <h2>Prueba con una sola obra: compras y bodega</h2>
     <p class="k-p">No hace falta cargarlo todo. Una obra, sus materiales y sus proveedores bastan para saber si Kisora le sirve a tu bodega. La misma pantalla funciona en el teléfono.</p>
     <ol class="g-pasos">
