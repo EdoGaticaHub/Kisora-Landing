@@ -121,7 +121,7 @@
     <div class="k-mod g-tipos">
       <div class="k-m"><h3>Plantilla completa</h3><p>Las cuatro hojas llenas: se carga todo.</p><a href="/guias/ejemplos/plantilla-completa.xlsx" download>Bajar plantilla-completa.xlsx</a></div>
       <div class="k-m"><h3>Plantilla incompleta</h3><p>Le faltan datos a propósito: un RUT, una unidad, un nombre.</p><a href="/guias/ejemplos/plantilla-incompleta.xlsx" download>Bajar plantilla-incompleta.xlsx</a></div>
-      <div class="k-m"><h3>Nómina con encabezados propios</h3><p>«R.U.T.», «Fec. nacimiento» y columnas que Kisora no usa.</p><a href="/guias/ejemplos/nomina-propia.xlsx" download>Bajar nomina-propia.xlsx</a></div>
+      <div class="k-m"><h3>Nómina con encabezados propios</h3><p>«Doc. identidad», «Fec. nacimiento» y columnas que Kisora no usa.</p><a href="/guias/ejemplos/nomina-propia.xlsx" download>Bajar nomina-propia.xlsx</a></div>
       <div class="k-m"><h3>Herramientas</h3><p>Con un valor que no dice si es por unidad o total.</p><a href="/guias/ejemplos/herramientas.xlsx" download>Bajar herramientas.xlsx</a></div>
       <div class="k-m"><h3>Facturas de proveedores</h3><p>Ordenado: Kisora lo lee solo.</p><a href="/guias/ejemplos/facturas-proveedores.xlsx" download>Bajar facturas-proveedores.xlsx</a></div>
       <div class="k-m"><h3>Un archivo que no es de Kisora</h3><p>Una lista de invitados, para ver qué pasa.</p><a href="/guias/ejemplos/archivo-desconocido.xlsx" download>Bajar archivo-desconocido.xlsx</a></div>
@@ -160,19 +160,19 @@
       </li>
     </ol>
     <h3 class="g-sub">Caso 3 · Encabezados propios: Kisora pregunta qué columna es cuál</h3>
-    <p class="k-p">Con <strong>nomina-propia.xlsx</strong>: encabezados «N°», «Nombre completo», «R.U.T.», «Fec. nacimiento», «Sueldo base», «Fono», «Cargo» y «AFP». Una fila sin RUN, otra con RUN inválido y una fecha imposible (31-02-1992).</p>
+    <p class="k-p">Con <strong>nomina-propia.xlsx</strong>: encabezados «N°», «Nombre completo», «Doc. identidad», «Fec. nacimiento», «Sueldo base», «Fono», «Cargo» y «AFP». Una fila sin RUN, otra con RUN inválido y una fecha imposible (31-02-1992).</p>
     <ol class="g-pasos">
       <li class="g-paso">
         <div class="g-txt"><span class="k-nd">1</span><h3>Sube la nómina</h3><p>En <strong>Personal</strong>, (1) toca <strong>Subir nómina</strong> y elige el archivo.</p></div>
         <div class="win"><img src="/img/g2-propia-1.webp" width="1440" height="900" loading="lazy" alt="Personal con el botón Subir nómina marcado"></div>
       </li>
       <li class="g-paso">
-        <div class="g-txt"><span class="k-nd">2</span><h3>Kisora no está seguro</h3><p>Reconoce una <strong>nómina de trabajadores</strong>, pero con <strong>confianza baja</strong> (1): no entendió «R.U.T.» como RUN. Te pide indicar cuál es cuál: la (2) Columna C.</p></div>
-        <div class="win"><img src="/img/g2-propia-2.webp" width="1440" height="900" loading="lazy" alt="Panel Subir nómina con confianza baja y la columna R.U.T. sin asignar"></div>
+        <div class="g-txt"><span class="k-nd">2</span><h3>Kisora no está seguro</h3><p>Reconoce una <strong>nómina de trabajadores</strong>, pero con <strong>confianza baja</strong> (1): no entendió «Doc. identidad» como RUN. Te pide indicar cuál es cuál: la (2) Columna C.</p></div>
+        <div class="win"><img src="/img/g2-propia-2.webp" width="1440" height="900" loading="lazy" alt="Panel Subir nómina con confianza baja y la columna Doc. identidad sin asignar"></div>
       </li>
       <li class="g-paso">
         <div class="g-txt"><span class="k-nd">3</span><h3>Elige la columna</h3><p>Al marcar esa columna como <strong>RUN</strong> (4), Kisora recalcula: (3) 4 filas, 2 por cargar y 2 por resolver. Toca (5) <strong>Cargar nómina</strong>. Lo que corrijas queda recordado para el próximo archivo. «AFP» se guarda como observación; «Cargo», que Kisora no usa, queda fuera.</p></div>
-        <div class="win"><img src="/img/g2-propia-3.webp" width="1440" height="900" loading="lazy" alt="Panel con la columna R.U.T. asignada a RUN, el resumen de filas y el botón Cargar nómina"></div>
+        <div class="win"><img src="/img/g2-propia-3.webp" width="1440" height="900" loading="lazy" alt="Panel con la columna Doc. identidad asignada a RUN, el resumen de filas y el botón Cargar nómina"></div>
       </li>
       <li class="g-paso">
         <div class="g-txt"><span class="k-nd">4</span><h3>Completa lo que falta</h3><p>La fila sin RUN y la de RUN inválido quedan en <strong>Por resolver</strong>, al final de Personal: (1) escribe el RUN, (2) <strong>Cargar corregido</strong> o (3) <strong>Descartar</strong>. La fecha imposible no se carga: ese campo queda vacío para que lo completes.</p></div>
