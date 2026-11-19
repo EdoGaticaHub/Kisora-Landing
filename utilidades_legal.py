@@ -4,7 +4,7 @@ from pathlib import Path
 import markdown
 
 RAIZ = Path(__file__).resolve().parent
-FECHA = "8 de noviembre de 2026"
+FECHA = "19 de noviembre de 2026"
 DOCS = {"licencia": "Licencia de uso", "terminos": "Términos de servicio", "privacidad": "Política de privacidad"}
 NOMBRES = {"licencia": "Contrato de licencia de uso", **{k: v for k, v in DOCS.items() if k != "licencia"}}
 
