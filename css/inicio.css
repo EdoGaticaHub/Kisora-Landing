@@ -25,7 +25,7 @@
 .k-lista li{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 16px;border-radius:10px;background:var(--bg);border:1px solid var(--ln);border-left:4px solid var(--wn);transition:transform .15s,border-color .15s}
 .k-lista li.r{border-left-color:#C0463A}
 .k-lista li:hover{transform:translateX(3px);border-color:var(--ac)}
-.k-lista b{min-width:28px;text-align:center;padding:2px 8px;border-radius:99px;background:var(--sf2);font-variant-numeric:tabular-nums}
+.k-lista b{min-width:28px;text-align:center;padding:2px 8px;border-radius:8px;background:var(--sf2);font-variant-numeric:tabular-nums}
 
 /* flujo con pulso */
 .k-flujo{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:16px;position:relative;counter-reset:n}
