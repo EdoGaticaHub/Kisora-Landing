@@ -35,7 +35,7 @@ section{padding-block:96px}
 .hero .hg>div:first-child{max-width:520px}
 .foto{margin:0;position:relative;border-radius:var(--r);overflow:hidden;border:1px solid var(--ln)}
 .foto img{width:100%;height:100%;object-fit:cover;filter:saturate(.7) contrast(1.05)}
-.foto::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#0F243800,#0F2438cc),linear-gradient(135deg,#5CA28B22,#EDE4D333)}
+.foto::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#16181B00,#16181Bcc),linear-gradient(135deg,#5CA28B22,#EDE4D333)}
 /* prueba */
 .band{background:var(--sf);border-block:1px solid var(--ln)}
 .regla{list-style:none;margin:48px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;position:relative}
