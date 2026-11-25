@@ -85,6 +85,9 @@ html:not(.js) .k-panel+.k-panel{border-top:1px solid var(--ln);margin-top:24px;p
 .k-precio ul{margin:20px 0 0;padding:0;list-style:none}.k-precio li{padding:12px 0 12px 32px;border-bottom:1px solid var(--ln);position:relative;font-size:.95rem}
 .k-precio li::before{content:"";position:absolute;left:4px;top:19px;width:12px;height:6px;border-left:2px solid var(--ok);border-bottom:2px solid var(--ok);transform:rotate(-45deg)}
 .k-precio .acc{margin-top:24px}
+.dos-sub{max-width:50ch;margin-top:-24px;margin-bottom:40px}
+.mt-48{margin-top:48px}
+.pr-sep{margin-top:20px;padding-top:16px;border-top:1px solid var(--ln)}
 
 /* faq */
 .k-faq{display:grid;grid-template-columns:4fr 8fr;gap:clamp(32px,5vw,72px);align-items:start}

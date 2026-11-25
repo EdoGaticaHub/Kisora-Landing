@@ -19,10 +19,6 @@
       if (j < 0) return; e.preventDefault(); ir(tabs[(j + tabs.length) % tabs.length], true);
     });
   });
-  // Los pasos del flujo abren su pantalla en «Plataforma».
-  [].forEach.call(document.querySelectorAll("[data-ir]"), function (a) {
-    a.addEventListener("click", function () { var t = document.getElementById("t-" + a.getAttribute("data-ir")); if (t) ir(t); });
-  });
   ir(tabs[0], null); // null: al cargar no mueve la página
 })();
 
