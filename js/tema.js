@@ -5,7 +5,7 @@
   function poner(t) {
     d.setAttribute("data-tema", t);
     var m = document.querySelector('meta[name="theme-color"]');
-    if (m) m.content = t === "claro" ? "#F7F6F3" : "#0F2438";
+    if (m) m.content = t === "claro" ? "#F4F4F1" : "#16181B";
     var b = document.getElementById("tema");
     if (b) { b.setAttribute("aria-pressed", t === "claro"); b.setAttribute("aria-label", t === "claro" ? "Cambiar a tema oscuro" : "Cambiar a tema claro"); }
   }

@@ -28,7 +28,7 @@ Plan `beta` (el de hoy): 30 días de prueba, 30 de gracia y 60 de solo lectura (
 
 ## Antes de anunciar (pendientes)
 
-- [ ] **Consejo UX combinado (25-11-2026):** 9 cambios de landing pendientes — unificar paleta V3 con la app, eliminar Bricolage/solo Inter, radios 8/12 px, modo claro por defecto, «Módulos» → «Tipos de obra», siglas de decreto expandidas, condensar secciones (#flujo, #terreno, funciones+integraciones), pricing visible antes del FAQ, narrativa de marca. Docs de ejecución: Doc A (CSS) y Doc C (HTML). Detalle en `Kisora-VSC/docs/ROADMAP.md` › Fase J › «Interfaz y landing».
+- [ ] **Consejo UX combinado (25-11-2026):** hecho el Doc A (CSS: paleta V3 unificada con la app, solo Inter sin Bricolage, radios 8/12 px, claro como valor base; `js/tema.js` sigue el tema del sistema si no hay preferencia guardada). Pendiente el Doc C (HTML): «Módulos» → «Tipos de obra», siglas de decreto expandidas, condensar secciones (#flujo, #terreno, funciones+integraciones), pricing visible antes del FAQ, narrativa de marca. Detalle en `Kisora-VSC/docs/ROADMAP.md` › Fase J › «Interfaz y landing».
 - [ ] Buzón de contacto: hoy `legal/` y `probar.html` usan `kisora.contacto@zohomail.com`; migrar a `contacto@kisora.cl` cuando exista (cambiar en `utilidades_legal.py` y `probar.html`).
 - [ ] Revisión de abogado de `legal/` (publicado, pero sin revisar por abogado).
 - [ ] Planes y pago: la landing no los muestra mientras sea beta (sección «Planes» retirada, decisión 19-11-2026; se mantiene el descuento por participar). Al abrir la venta, publicar planes y valores en UF y el monto del descuento beta. La activación automática existe (`utilidades/activar_cliente.py` en Kisora-VSC); falta la pasarela de pago, aún sin elegir.
