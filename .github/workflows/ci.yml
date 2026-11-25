@@ -8,7 +8,7 @@ jobs:
   html:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - run: npx --yes htmlhint@1.1.4 index.html probar.html 404.html error.html
       - run: python3 -m py_compile utilidades_legal.py
       - name: Todo url(/...) del CSS existe
