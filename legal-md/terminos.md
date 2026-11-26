@@ -31,7 +31,7 @@ El servicio se presta bajo un modelo single-tenant: cada Cliente tiene su propia
 
 ## 4. Período de prueba gratuita
 
-4.1. Kisora ofrece un período de prueba gratuita por el plazo indicado en kisora.cl (actualmente 30 días, mientras Kisora esté en beta). La prueba da acceso completo a todas las funciones del Software.
+4.1. Kisora ofrece un período de prueba gratuita por el plazo indicado en kisora.cl (actualmente 90 días, mientras Kisora esté en beta). La prueba da acceso completo a todas las funciones del Software.
 
 4.2. La prueba **no constituye una versión definitiva**. El Software puede presentar errores o cambios de funcionalidad. No existe acuerdo de nivel de servicio (SLA) durante la prueba.
 
@@ -43,9 +43,9 @@ El servicio se presta bajo un modelo single-tenant: cada Cliente tiene su propia
 
 ## 5. Planes y contratación
 
-5.1. Kisora ofrece un precio único por Instalación, en suscripción anual expresada en UF netas. El precio incluye todos los módulos disponibles: compras, bodega, proyectos, logística, pagos y personal, así como los módulos por tipo de trabajo (vivienda social, mejoramiento y obra pública), actualizaciones y soporte por correo electrónico.
+5.1. Kisora ofrece tres planes por Instalación (Starter, Profesional y Empresa), con precio mensual en pesos chilenos (CLP) netos, sin cobro por usuario. Todos incluyen compras, bodega, proyectos, logística, pagos y personal, actualizaciones y soporte por correo electrónico; los planes se distinguen por el número de usuarios, proyectos activos, almacenamiento y tipos de obra incluidos, según lo publicado en kisora.cl.
 
-5.2. El número de usuarios, las condiciones particulares y el precio se definen en la cotización que el Proveedor entrega al Cliente. El Proveedor puede modificar las condiciones para nuevas contrataciones, sin afectar las licencias vigentes hasta su próxima renovación.
+5.2. Las condiciones particulares y el precio se definen en la cotización que el Proveedor entrega al Cliente. El Proveedor puede modificar las condiciones para nuevas contrataciones, sin afectar las licencias vigentes hasta su próxima renovación.
 
 5.3. Los ajustes al número de usuarios u otras condiciones durante el Período de Suscripción se gestionan contactando al Proveedor.
 

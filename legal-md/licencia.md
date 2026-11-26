@@ -96,7 +96,7 @@ La infracción de cualquiera de estas restricciones constituye incumplimiento gr
 
 ## 8. Pago y facturación
 
-8.1. **Precio:** El precio de la licencia se expresa en Unidades de Fomento (UF), valores netos (sin IVA), y se cobra por Instalación en períodos anuales. El precio vigente es el publicado en kisora.cl al momento de la contratación o renovación, salvo acuerdo escrito distinto.
+8.1. **Precio:** El precio de la licencia se expresa en pesos chilenos (CLP), valores netos (sin IVA), y se cobra por Instalación mensualmente o, con descuento, por año adelantado. El precio vigente es el publicado en kisora.cl al momento de la contratación o renovación, salvo acuerdo escrito distinto.
 
 8.2. **Facturación:** El Proveedor emitirá la documentación tributaria correspondiente conforme a la legislación chilena vigente. El pago se realizará mediante los medios que el Proveedor indique (transferencia bancaria u otro medio habilitado).
 
@@ -110,7 +110,7 @@ La infracción de cualquiera de estas restricciones constituye incumplimiento gr
 
 9.1. **Período inicial:** La licencia tiene una vigencia de 12 meses contados desde la fecha de activación de la Instalación.
 
-9.2. **Período de prueba:** El Cliente puede acceder a una prueba gratuita del Software por el período que se indique en kisora.cl (actualmente 30 días, mientras Kisora esté en beta), sin necesidad de tarjeta de crédito. Durante la prueba, se aplican todas las cláusulas de este Contrato excepto las de pago. Al finalizar la prueba, el Cliente puede contratar la suscripción o dejar de usar el Software. Los datos ingresados durante la prueba se conservan conforme a la cláusula 10.
+9.2. **Período de prueba:** El Cliente puede acceder a una prueba gratuita del Software por el período que se indique en kisora.cl (actualmente 90 días, mientras Kisora esté en beta), sin necesidad de tarjeta de crédito. Durante la prueba, se aplican todas las cláusulas de este Contrato excepto las de pago. Al finalizar la prueba, el Cliente puede contratar la suscripción o dejar de usar el Software. Los datos ingresados durante la prueba se conservan conforme a la cláusula 10.
 
 9.3. **Renovación:** La licencia se renueva automáticamente por períodos sucesivos de 12 meses, salvo que cualquiera de las partes notifique su intención de no renovar con al menos 30 días de anticipación antes del vencimiento del período en curso.
 

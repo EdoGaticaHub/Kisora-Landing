@@ -24,14 +24,14 @@ DNS de kisora.cl: registros A a 185.199.108.153, 185.199.109.153, 185.199.110.15
 
 ## Plazos
 
-Plan `beta` (el de hoy): 30 días de prueba, 30 de gracia y 60 de solo lectura (`DIAS_PRUEBA` en `app/licencia.py` del producto, correos y Términos); luego se archiva y se elimina. Los 30 días rigen mientras el dueño no dé el visto bueno de lanzamiento (decisión 19-11-2026); al lanzar, manda el plan básico: 14 días de prueba, con la misma gracia y solo lectura. Quien active un plan antes de eso conserva sus datos (`activar_cliente.py`).
+Plan `beta` (el de hoy): 90 días de prueba, 30 de gracia y 60 de solo lectura (decisión 25-11-2026, `docs/ROADMAP.md` del producto); luego se archiva y se elimina. `DIAS_PRUEBA` en `app/licencia.py` del producto (ya en 90); el tope de la beta es de 5 usuarios activos (`app/tope_usuarios.py`). Al lanzar, manda el plan básico: 14 días de prueba, con la misma gracia y solo lectura. Quien active un plan antes de eso conserva sus datos (`activar_cliente.py`).
 
 ## Antes de anunciar (pendientes)
 
 - [ ] **Consejo UX combinado (25-11-2026):** hecho el Doc A (CSS: paleta V3 unificada con la app, solo Inter sin Bricolage, radios 8/12 px, claro como valor base; `js/tema.js` sigue el tema del sistema si no hay preferencia guardada). Pendiente el Doc C (HTML): «Módulos» → «Tipos de obra», siglas de decreto expandidas, condensar secciones (#flujo, #terreno, funciones+integraciones), pricing visible antes del FAQ, narrativa de marca. Detalle en `Kisora-VSC/docs/ROADMAP.md` › Fase J › «Interfaz y landing».
 - [ ] Buzón de contacto: hoy `legal/` y `probar.html` usan `kisora.contacto@zohomail.com`; migrar a `contacto@kisora.cl` cuando exista (cambiar en `utilidades_legal.py` y `probar.html`).
 - [ ] Revisión de abogado de `legal/` (publicado, pero sin revisar por abogado).
-- [ ] Planes y pago: la landing no los muestra mientras sea beta (sección «Planes» retirada, decisión 19-11-2026; se mantiene el descuento por participar). Al abrir la venta, publicar planes y valores en UF y el monto del descuento beta. La activación automática existe (`utilidades/activar_cliente.py` en Kisora-VSC); falta la pasarela de pago, aún sin elegir.
+- [ ] Planes y pago: la landing publica Starter $49.000, Profesional $89.000 y Empresa $149.000 al mes (CLP, más IVA; tabla de `docs/ROADMAP.md` › «Precios decididos»). Los límites de proyectos activos y almacenamiento y el «soporte prioritario» aún no los aplica el producto; el tope de usuarios es `tope.json` (hoy 5). Falta la pasarela de pago, aún sin elegir; el monto del descuento beta se informa al abrir la venta.
 - [ ] «Servidores: Oracle Cloud, Santiago» y «Meta de 99 %» salen de `legal-md/`; confirmar que siguen siendo ciertos.
 - [ ] Si se cambian los días de prueba, hay que cambiarlos en `index.html` (hero, ingreso, prueba, FAQ), `probar.html`, `guias/index.html`, `legal-md/terminos.md` y `legal-md/licencia.md` (luego `python3 utilidades_legal.py`), y en `DIAS_PRUEBA` de `app/licencia.py` del producto (ver «Plazos»). Al lanzar, quitar también el aviso «Kisora está en beta» (`.aviso-beta`).
 - [ ] El formulario de `probar.html` depende de `https://alta.kisora.cl/api/alta`; verificar que esté en línea (y con CORS para kisora.cl) antes de anunciar.
