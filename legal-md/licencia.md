@@ -96,7 +96,7 @@ La infracción de cualquiera de estas restricciones constituye incumplimiento gr
 
 ## 8. Pago y facturación
 
-8.1. **Precio:** El precio de la licencia se expresa en Unidades de Fomento (UF), valores netos (sin IVA), y se cobra por Instalación en períodos anuales. El precio vigente es el publicado en kisora.cl al momento de la contratación o renovación, salvo acuerdo escrito distinto.
+8.1. **Precio:** El precio de la licencia se expresa en pesos chilenos (CLP), valores netos (sin IVA), y se cobra por Instalación mensualmente o, con descuento, por año adelantado. El precio vigente es el publicado en kisora.cl al momento de la contratación o renovación, salvo acuerdo escrito distinto.
 
 8.2. **Facturación:** El Proveedor emitirá la documentación tributaria correspondiente conforme a la legislación chilena vigente. El pago se realizará mediante los medios que el Proveedor indique (transferencia bancaria u otro medio habilitado).
 
