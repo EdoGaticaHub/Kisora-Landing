@@ -31,7 +31,7 @@ El servicio se presta bajo un modelo single-tenant: cada Cliente tiene su propia
 
 ## 4. Período de prueba gratuita
 
-4.1. Kisora ofrece un período de prueba gratuita por el plazo indicado en kisora.cl (actualmente 30 días, mientras Kisora esté en beta). La prueba da acceso completo a todas las funciones del Software.
+4.1. Kisora ofrece un período de prueba gratuita por el plazo indicado en kisora.cl (actualmente 90 días, mientras Kisora esté en beta). La prueba da acceso completo a todas las funciones del Software.
 
 4.2. La prueba **no constituye una versión definitiva**. El Software puede presentar errores o cambios de funcionalidad. No existe acuerdo de nivel de servicio (SLA) durante la prueba.
 

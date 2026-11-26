@@ -110,7 +110,17 @@ html:not(.js) .k-panel+.k-panel{border-top:1px solid var(--ln);margin-top:24px;p
 }
 @media(max-width:36rem){
  .k-mod,.k-fns{grid-template-columns:1fr}.k-tels{grid-template-columns:1fr 1fr}.k-tel:nth-child(3){display:none}
- .k-hg .acc .btn,.cta .acc .btn,.k-precio .acc .btn{width:100%;justify-content:center}
+ .k-hg .acc .btn,.cta .acc .btn,.k-precio .acc .btn,.k-plan .btn{width:100%;justify-content:center}
  .k-reg li{grid-template-columns:90px 1fr}
 }
 @media(prefers-reduced-motion:reduce){.k-in{animation:none}.k-flujo::after{animation:none;display:none}.k-lista li:hover,.k-panel .win:hover,.k-tel:hover img,.k-mod>div:hover,.k-flujo a:hover,.btn:active{transform:none}.k-tira .foto:hover img{transform:none}}
+
+/* planes */
+.k-planes{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:32px;align-items:stretch}
+.k-plan{display:flex;flex-direction:column;position:relative}
+.k-plan h3{margin:0}.k-plan .cifra span{font-size:1rem;font-weight:600;color:var(--mu)}
+.k-plan ul{margin:16px 0 24px;padding:0;list-style:none;flex:1}.k-plan li{padding:12px 0 12px 32px;border-bottom:1px solid var(--ln);position:relative;font-size:.95rem}
+.k-plan li::before{content:"";position:absolute;left:4px;top:19px;width:12px;height:6px;border-left:2px solid var(--ok);border-bottom:2px solid var(--ok);transform:rotate(-45deg)}
+.k-plan.rec{border:2px solid var(--ac)}.k-plan.rec .tag{position:absolute;top:32px;right:32px}
+.k-plan .btn{justify-content:center}
+@media(max-width:60rem){.k-planes{grid-template-columns:1fr}}
