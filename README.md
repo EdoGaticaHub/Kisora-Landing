@@ -24,7 +24,7 @@ DNS de kisora.cl: registros A a 185.199.108.153, 185.199.109.153, 185.199.110.15
 
 ## Plazos
 
-Plan `beta` (el de hoy): 90 días de prueba, 30 de gracia y 60 de solo lectura (decisión 25-11-2026, `docs/ROADMAP.md` del producto); luego se archiva y se elimina. **El producto aún no lo aplica:** `DIAS_PRUEBA` en `app/licencia.py` sigue en 30 y `app/tope_usuarios.py` en 5 usuarios; hasta cambiarlos, la prueba real dura 30 días. Al lanzar, manda el plan básico: 14 días de prueba, con la misma gracia y solo lectura. Quien active un plan antes de eso conserva sus datos (`activar_cliente.py`).
+Plan `beta` (el de hoy): 90 días de prueba, 30 de gracia y 60 de solo lectura (decisión 25-11-2026, `docs/ROADMAP.md` del producto); luego se archiva y se elimina. `DIAS_PRUEBA` en `app/licencia.py` del producto (ya en 90); el tope de la beta es de 5 usuarios activos (`app/tope_usuarios.py`). Al lanzar, manda el plan básico: 14 días de prueba, con la misma gracia y solo lectura. Quien active un plan antes de eso conserva sus datos (`activar_cliente.py`).
 
 ## Antes de anunciar (pendientes)
 
