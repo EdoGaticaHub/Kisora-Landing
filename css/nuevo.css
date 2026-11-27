@@ -101,10 +101,13 @@ h1{font-weight:700;letter-spacing:-.035em}h2{font-weight:650}
 /* Comparación de precio bajo el lead: tarjeta de dos filas; Kisora resaltada con borde y etiqueta, no solo color */
 .k-vs{margin-top:24px;max-width:30rem;border:1px solid var(--ln);border-radius:12px;background:var(--sf);overflow:hidden}
 .k-vs-f{display:grid;grid-template-columns:auto 1fr;column-gap:16px;align-items:baseline;margin:0;padding:12px 18px}
-.k-vs-n{grid-row:span 2;font-size:.85rem;font-weight:600;color:var(--mu);min-width:7.5rem}
+.k-vs-n{grid-row:span 2;font-size:.85rem;font-weight:600;color:var(--mu);min-width:9rem}
 .k-vs-p{font:800 1.35rem/1.2 var(--fd);letter-spacing:-.02em;color:var(--mu)}
 .k-vs-u{font-size:.85rem;color:var(--mu)}
 .k-vs-k{border-top:1px solid var(--ln);border-inline-start:4px solid var(--ac);padding-inline-start:14px;background:var(--h1)}
 .k-vs-k .k-vs-n,.k-vs-k .k-vs-p{color:var(--ink)}.k-vs-k .k-vs-p{font-size:1.6rem}.k-vs-k .k-vs-u{color:var(--ink)}
 .k-vs-l{display:flex;align-items:center;min-height:44px;padding:0 18px;border-top:1px solid var(--ln);font-size:.9rem;font-weight:600;text-underline-offset:3px}
 @media(max-width:30rem){.k-vs-f{grid-template-columns:1fr}.k-vs-n{grid-row:auto;min-width:0}}
+
+/* Escritorio: título del hero más contenido para que la tarjeta de precio quede completa en 1366×768 */
+@media(min-width:60.01rem){.k-hg h1{font-size:clamp(2.4rem,3.8vw,3.4rem);max-width:18ch}.k-hero{padding-block-start:clamp(28px,3.5vw,44px)}.k-hg .tag{margin-bottom:14px}}
