@@ -111,3 +111,4 @@ h1{font-weight:700;letter-spacing:-.035em}h2{font-weight:650}
 
 /* Escritorio: título del hero más contenido para que la tarjeta de precio quede completa en 1366×768 */
 @media(min-width:60.01rem){.k-hg h1{font-size:clamp(2.4rem,3.8vw,3.4rem);max-width:18ch}.k-hero{padding-block-start:clamp(28px,3.5vw,44px)}.k-hg .tag{margin-bottom:14px}}
+@media(min-width:60.01rem){.k-hg .lead{margin-top:14px;font-size:1.1rem}.k-vs{margin-top:16px}.k-vs-f{padding-block:8px}.k-vs-l{min-height:40px}.k-hg .acc{margin-top:18px}.k-hg .nota{margin-top:10px}}
