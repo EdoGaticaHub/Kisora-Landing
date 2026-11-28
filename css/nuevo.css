@@ -2,6 +2,7 @@
 :root{--fd:"Inter","Segoe UI",system-ui,sans-serif}
 h1,h2,h3,.k-big,.cifra,.dia{font-family:var(--fd)}
 h1{font-weight:700;letter-spacing:-.035em}h2{font-weight:650}
+h2.tag{font:700 .75rem/1.3 var(--m);max-width:none;margin-bottom:14px}
 .btn{border-radius:8px;min-height:52px;padding:0 28px}.btn.s{min-height:44px;padding:0 18px}
 .btn.p{box-shadow:0 10px 26px -10px var(--gs)}
 .tag{display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border-radius:8px;background:var(--h1);letter-spacing:.06em;margin-bottom:20px}
